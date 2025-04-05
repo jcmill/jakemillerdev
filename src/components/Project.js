@@ -69,7 +69,6 @@ export default function Project({ handleScaled, piece, index }) {
 
       const style = document.createElement("style");
 
-      // next itteration will apply this to other elements.
       targetElements.forEach((el) => {
         const randomIndex = getRandomIndex(portfolioPhrases.length);
         const randomPhrase = portfolioPhrases[randomIndex];

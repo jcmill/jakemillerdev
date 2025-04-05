@@ -22,12 +22,10 @@ export default function useLogoScroll() {
       scrollOld = currentScrollY;
     }
 
-    // Add scroll event listener
     window.addEventListener("scroll", scrollDirection);
 
-    // Cleanup function
     return () => {
       window.removeEventListener("scroll", scrollDirection);
     };
-  }, []); // Empty dependency array ensures this runs once on mount
+  }, []);
 }

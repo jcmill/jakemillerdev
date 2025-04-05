@@ -4,7 +4,6 @@ export default function useLazyLoad() {
   useEffect(() => {
     const blurred = document.querySelectorAll(".js-img-blur");
 
-    // Function to apply the `js-loaded` class
     function loaded(event) {
       const image = event.target;
       image.classList.add("js-loaded");
@@ -13,7 +12,6 @@ export default function useLazyLoad() {
     blurred.forEach((entry) => {
       const img = entry.querySelectorAll(".js-image");
 
-      // Check if the first image is already loaded, then apply the `loaded` function
       if (img.length > 0 && img[0].complete) {
         img.forEach((image) => {
           image.classList.add("js-loaded");
@@ -25,7 +23,6 @@ export default function useLazyLoad() {
       }
     });
 
-    // Cleanup function to remove event listeners
     return () => {
       blurred.forEach((entry) => {
         const img = entry.querySelectorAll(".js-image");
@@ -34,5 +31,5 @@ export default function useLazyLoad() {
         });
       });
     };
-  }, []); // Empty dependency array ensures this runs once on mount
+  }, []);
 }

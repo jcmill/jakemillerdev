@@ -11,14 +11,12 @@ export default function useHoverImage() {
       return;
     }
 
-    //// hover circle mouse follow vars
     let mouseX = 0;
     let mouseY = 0;
     let circleX = 0;
     let circleY = 0;
     let speed = 0.06;
 
-    // Mouse follow function
     let mouseFollow = function () {
       let distX = mouseX - circleX;
       let distY = mouseY - circleY;
@@ -29,17 +27,14 @@ export default function useHoverImage() {
       requestAnimationFrame(mouseFollow);
     };
 
-    // Initiate mouse follow
     mouseFollow();
 
-    // Track and translate mouse movements
     const handleMouseMove = (e) => {
       mouseX = e.pageX;
       mouseY = e.pageY;
     };
     document.addEventListener("mousemove", handleMouseMove);
 
-    // Image hover logic
     let imgHoverIndex;
     const handleMouseEnter = (entry, index) => {
       imgHoverIndex = index;
@@ -48,7 +43,6 @@ export default function useHoverImage() {
     };
 
     const handleMouseLeave = (e) => {
-      // Check if the cursor is still over the circleHover or imgHover
       if (
         !circleHover.contains(e.relatedTarget) &&
         !imgHover[imgHoverIndex]?.contains(e.relatedTarget)
@@ -67,7 +61,6 @@ export default function useHoverImage() {
 
     circleHover.addEventListener("mouseleave", handleMouseLeave);
 
-    // Cleanup function
     return () => {
       document.removeEventListener("mousemove", handleMouseMove);
       imgHover.forEach((entry) => {

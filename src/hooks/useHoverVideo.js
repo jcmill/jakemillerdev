@@ -11,14 +11,12 @@ export default function useHoverVideo() {
       return;
     }
 
-    //// hover circle mouse follow vars
     let mouseX = 0;
     let mouseY = 0;
     let circleX = 0;
     let circleY = 0;
     let speed = 0.06;
 
-    // Mouse follow function
     let mouseFollow = function () {
       let distX = mouseX - circleX;
       let distY = mouseY - circleY;
@@ -29,17 +27,14 @@ export default function useHoverVideo() {
       requestAnimationFrame(mouseFollow);
     };
 
-    // Initiate mouse follow
     mouseFollow();
 
-    // Track and translate mouse movements
     const handleMouseMove = (e) => {
       mouseX = e.pageX;
       mouseY = e.pageY;
     };
     document.addEventListener("mousemove", handleMouseMove);
 
-    // Image hover logic
     let imgHoverIndex;
     const handleMouseEnter = (entry, index) => {
       imgHoverIndex = index;
@@ -61,7 +56,6 @@ export default function useHoverVideo() {
       entry.addEventListener("mouseleave", handleMouseLeave);
     });
 
-    // Cleanup function
     return () => {
       document.removeEventListener("mousemove", handleMouseMove);
       imgHover.forEach((entry) => {

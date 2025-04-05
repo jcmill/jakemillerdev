@@ -3,7 +3,7 @@ import iconLinkedIn from "../images/icons/icon-linkedin-light.svg";
 
 export default function Menu({ handleHamburgerClick }) {
   const handleClickAndScroll = () => {
-    handleHamburgerClick(); // Call the provided function
+    handleHamburgerClick();
     window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
   };
   return (

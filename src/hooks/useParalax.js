@@ -9,7 +9,6 @@ export default function useParalax() {
 
     const parallaxAbout = document.querySelectorAll(".js-parallax-about");
 
-    // Observer callback to manage scroll event listeners
     const parallaxCallback = (entries, observer) => {
       entries.forEach((entry) => {
         if (!entry.isIntersecting) {
@@ -32,7 +31,6 @@ export default function useParalax() {
       parallaxOptions
     );
 
-    // Add observer for elements matching the media query
     const handleLoad = () => {
       const query = window.matchMedia("(min-width: 767px)");
       if (query.matches) {
@@ -44,7 +42,6 @@ export default function useParalax() {
 
     window.addEventListener("load", handleLoad);
 
-    // Parallax speed function
     function parallaxAboutSpeed() {
       const speed = window.scrollY * 0.02;
       parallaxAbout.forEach((entry) => {
@@ -52,11 +49,10 @@ export default function useParalax() {
       });
     }
 
-    // Cleanup function
     return () => {
       window.removeEventListener("load", handleLoad);
       window.removeEventListener("scroll", parallaxAboutSpeed);
       observerParallax.disconnect();
     };
-  }, []); // Empty dependency array ensures this runs once on mount
+  }, []);
 }

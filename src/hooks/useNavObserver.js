@@ -33,10 +33,8 @@ export default function useNavObserver() {
       observerOptions
     );
 
-    // Observe each section
     sections.forEach((section) => observer.observe(section));
 
-    // Cleanup function
     return () => {
       observer.disconnect();
     };

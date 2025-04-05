@@ -5,7 +5,7 @@ export default function useIconObserver() {
     const iconDark = document.querySelector(".js-icon--dk");
     const iconLight = document.querySelector(".js-icon--lt");
     const sections = document.querySelectorAll(".js-bgc--dk, .js-bgc--lt");
-    const lastLightSection = document.querySelector(".js-bgc--lt:last-of-type"); // Select the last .js-bgc--lt
+    const lastLightSection = document.querySelector(".js-bgc--lt:last-of-type");
 
     const observerOptions = {
       root: null,
@@ -23,7 +23,6 @@ export default function useIconObserver() {
             iconDark.classList.remove("js-logo-invisible");
           }
         } else if (entry.target === lastLightSection) {
-          // Handle when the last .js-bgc--lt exits the screen
           iconLight.classList.remove("js-logo-invisible");
           iconDark.classList.add("js-logo-invisible");
         }
@@ -35,10 +34,8 @@ export default function useIconObserver() {
       observerOptions
     );
 
-    // Observe each section
     sections.forEach((section) => observer.observe(section));
 
-    // Cleanup function
     return () => {
       observer.disconnect();
     };

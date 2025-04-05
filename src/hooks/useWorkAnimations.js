@@ -6,7 +6,6 @@ export default function useWorkAnimations() {
       ".js-portfolio__component"
     );
 
-    // Function to handle scaling animations
     const setupScalingAnimations = () => {
       const scaleOptions = {
         rootMargin: "0px 0px 100px 0px",
@@ -59,7 +58,6 @@ export default function useWorkAnimations() {
         scaleComponentObserver.observe(target);
       });
 
-      // Cleanup scaling animations
       return () => {
         portfolioComponent.forEach((target) => {
           target.cleanupScrollHandler?.();
@@ -68,10 +66,8 @@ export default function useWorkAnimations() {
       };
     };
 
-    // Setup scaling animations and phrases
     const cleanupScaling = setupScalingAnimations();
 
-    // Cleanup function
     return () => {
       cleanupScaling();
     };
