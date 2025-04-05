@@ -1,0 +1,5 @@
+- [X] Hide deminished content on mobile
+- [ ] Adjust all fonts for largest screen size to variable size
+- [ ] 
+- [ ] Adjust the font size in the footer and grid placements
+- [ ] Create grid icon for grid overlay

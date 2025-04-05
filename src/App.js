@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import NavHamburger from "./components/NavHamburger";
+import Header from "./components/Header";
+import Hero from "./layouts/Hero";
+import ImageCurser from "./components/ImageCurser";
+import Work from "./layouts/Work";
+// import Canvas from "./components/Canvas";
+import About from "./layouts/About";
+import Footer from "./layouts/Footer";
+import Ascii from "./hooks/useLog";
+import useIconObserver from "./hooks/useIconObserver";
+import useLogoScroll from "./hooks/useLogoScroll";
 
-function App() {
+export default function App() {
+  useLogoScroll();
+  useIconObserver();
+  Ascii();
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header />
+      <NavHamburger />
+      <main>
+        <ImageCurser />
+        <Hero />
+        <Work />
+        {/* <Canvas /> */}
+        <About />
+      </main>
+      <Footer />
+    </>
   );
 }
-
-export default App;
