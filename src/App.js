@@ -1,6 +1,7 @@
 import NavHamburger from "./components/NavHamburger";
 import Header from "./components/Header";
 import Hero from "./layouts/Hero";
+import GridOverlay from "./components/GridOverlay";
 import ImageCurser from "./components/ImageCurser";
 import Work from "./layouts/Work";
 // import Canvas from "./components/Canvas";
@@ -19,6 +20,7 @@ export default function App() {
       <Header />
       <NavHamburger />
       <main>
+        <GridOverlay />
         <ImageCurser />
         <Hero />
         <Work />
