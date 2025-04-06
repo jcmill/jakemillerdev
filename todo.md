@@ -1,5 +1,30 @@
-- [X] Hide deminished content on mobile
-- [ ] Adjust all fonts for largest screen size to variable size
-- [ ] 
-- [ ] Adjust the font size in the footer and grid placements
-- [ ] Create grid icon for grid overlay
+- [x] Hide deminished content on mobile
+- [x] Adjust all fonts for largest screen size to variable size
+- [x] Adjust the font size in the footer and grid placements
+- [x] Create grid icon for grid overlay
+- [ ] Development
+  - [ ] Color Curve
+    - [ ] 16:10 image
+    - [ ] 16:10 video
+  - [ ] Single Page Checkout
+    - [ ] 16:10 image
+    - [ ] 16:10 video
+  - [ ] PDP
+    - [ ] 16:10 image
+    - [ ] 16:10 video
+  - [ ] Isotonix
+    - [ ] 16:10 image
+    - [ ] 16:10 video
+- [ ] UI/UX
+  - [x] GoTrim
+    - [x] 16:10 image
+    - [x] 16:10 video
+  - [ ] Motives
+    - [x] 16:10 image
+    - [ ] 16:10 video
+  - [ ] Dash
+    - [x] 16:10 image
+    - [ ] 16:10 video
+  - [ ] Motives
+    - [ ] 16:10 image
+    - [ ] 16:10 video

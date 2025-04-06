@@ -5,6 +5,10 @@ import video from "../images/logos/hero-logo.mp4";
 export default function Hero() {
   useTextAnimation();
 
+  const handleClickAndScroll = () => {
+    window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
+  };
+
   return (
     <section className="js-hero c-hero o-grid js-bgc--dk" id="hero">
       <div className="c-hero__video">
@@ -22,9 +26,9 @@ export default function Hero() {
         <h4>
           Design is my language, code is my brush, and the web is my canvas.
         </h4>
-        <a href="contact.html">
-          <button className="btn-primary">Let's Talk</button>
-        </a>
+        <button className="btn-primary" onClick={handleClickAndScroll}>
+          Let's Talk
+        </button>
       </div>
     </section>
   );

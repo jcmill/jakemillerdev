@@ -21,8 +21,8 @@ export default function App() {
       <NavHamburger />
       <main>
         <GridOverlay />
-        <ImageCurser />
         <Hero />
+        <ImageCurser />
         <Work />
         {/* <Canvas /> */}
         <About />

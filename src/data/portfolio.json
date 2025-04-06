@@ -21,27 +21,7 @@
   },
   {
     "id": 2,
-    "brand": "UI/UX Motives",
-    "options": {
-      "hasUrl": false,
-      "dev": false,
-      "ui/ux": true,
-      "hasText2": true
-    },
-    "url": "https://excalidraw.com/",
-    "image": "../images/pages/home/test2.jpg",
-    "blurImage": "../images/pages/home/motives-eyeliner-in-sm.jpg",
-    "video": "../images/pages/home/test2.jpg",
-    "description": "Curabitur purus felis, ornare ut pharetra et",
-    "role": "UI/UX & Dev",
-    "text": "Nulla porttitor purus finibus purus ornare fringilla. Sed quis vehicula arcu. Pellentesque non mollis urna. Praesent nec mi massa. Proin enim est, imperdiet ac nunc in, egestas tristique urna. Sed scelerisque ex eu quam viverra, eu imperdiet purus imperdiet. Nulla tempus libero a varius volutpat. Duis a efficitur augue. Nulla leo nulla, interdum id nisl vitae, molestie sagittis risus. Cras sit amet elit nunc. Ut in laoreet mauris.",
-    "text2": "Fusce eget tellus quis elit porta convallis vitae sit amet ex. Ut ultrices elementum placerat. Quisque eget mi sed est interdum volutpat. Mauris enim quam, dapibus sit amet turpis et, tristique maximus tortor. Vestibulum eleifend orci quis scelerisque pulvinar. Sed vulputate mollis mi. Vestibulum ut semper magna, non facilisis ligula. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam sit amet rutrum turpis, quis porta ipsum. Vestibulum quis augue nunc.",
-    "country": ["USA", "TWN"],
-    "language": ["Eng", "TChi"]
-  },
-  {
-    "id": 3,
-    "brand": "UI/UX SHOP.COM",
+    "brand": "Motives Cosmetics",
     "options": {
       "hasUrl": false,
       "dev": false,
@@ -51,9 +31,29 @@
     "url": "https://excalidraw.com/",
     "image": "../images/pages/home/test.jpg",
     "blurImage": "../images/pages/home/motives-eyeliner-in-sm.jpg",
-    "video": "../images/pages/home/test.jpg",
+    "video": "../images/pages/home/gotrim-video.mp4",
     "description": "Curabitur purus felis, ornare ut pharetra et",
     "role": "UI & Dev",
+    "text": "Nulla porttitor purus finibus purus ornare fringilla. Sed quis vehicula arcu. Pellentesque non mollis urna. Praesent nec mi massa. Proin enim est, imperdiet ac nunc in, egestas tristique urna. Sed scelerisque ex eu quam viverra, eu imperdiet purus imperdiet. Nulla tempus libero a varius volutpat. Duis a efficitur augue. Nulla leo nulla, interdum id nisl vitae, molestie sagittis risus. Cras sit amet elit nunc. Ut in laoreet mauris.",
+    "text2": "Fusce eget tellus quis elit porta convallis vitae sit amet ex. Ut ultrices elementum placerat. Quisque eget mi sed est interdum volutpat. Mauris enim quam, dapibus sit amet turpis et, tristique maximus tortor. Vestibulum eleifend orci quis scelerisque pulvinar. Sed vulputate mollis mi. Vestibulum ut semper magna, non facilisis ligula. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam sit amet rutrum turpis, quis porta ipsum. Vestibulum quis augue nunc.",
+    "country": ["USA", "TWN"],
+    "language": ["Eng", "TChi"]
+  },
+  {
+    "id": 3,
+    "brand": "GoTrim Redesign",
+    "options": {
+      "hasUrl": false,
+      "dev": false,
+      "ui/ux": true,
+      "hasText2": true
+    },
+    "url": "https://excalidraw.com/",
+    "image": "../images/pages/home/gotrim.jpg",
+    "blurImage": "../images/pages/home/motives-eyeliner-in-sm.jpg",
+    "video": "../images/pages/home/gotrim-video.mp4",
+    "description": "Curabitur purus felis, ornare ut pharetra et",
+    "role": "UI/UX & Dev",
     "text": "Nulla porttitor purus finibus purus ornare fringilla. Sed quis vehicula arcu. Pellentesque non mollis urna. Praesent nec mi massa. Proin enim est, imperdiet ac nunc in, egestas tristique urna. Sed scelerisque ex eu quam viverra, eu imperdiet purus imperdiet. Nulla tempus libero a varius volutpat. Duis a efficitur augue. Nulla leo nulla, interdum id nisl vitae, molestie sagittis risus. Cras sit amet elit nunc. Ut in laoreet mauris.",
     "text2": "Fusce eget tellus quis elit porta convallis vitae sit amet ex. Ut ultrices elementum placerat. Quisque eget mi sed est interdum volutpat. Mauris enim quam, dapibus sit amet turpis et, tristique maximus tortor. Vestibulum eleifend orci quis scelerisque pulvinar. Sed vulputate mollis mi. Vestibulum ut semper magna, non facilisis ligula. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam sit amet rutrum turpis, quis porta ipsum. Vestibulum quis augue nunc.",
     "country": ["USA", "TWN"],

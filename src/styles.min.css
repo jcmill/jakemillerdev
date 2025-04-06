@@ -402,6 +402,7 @@ section {
   position: fixed;
   height: auto;
   inset: 0 auto auto 0;
+  pointer-events: none;
   width: 100dvw;
   z-index: 1;
 }
@@ -461,7 +462,7 @@ section {
   display: -ms-flexbox;
   display: flex;
   height: 2em;
-  inset: auto 2em 2em auto;
+  inset: auto 0.75em 1em auto;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -470,6 +471,11 @@ section {
   z-index: 2;
 }
 
+@media screen and (min-width: 768px) {
+  .o-grid-icon {
+    inset: auto 2em 2em auto;
+  }
+}
 .o-grid-icon--3 {
   background: #ff0000;
   -webkit-box-flex: 0;
@@ -1256,7 +1262,7 @@ button {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background: rgba(33, 35, 218, 0.6);
+  background: rgba(255, 0, 0, 0.6);
   backdrop-filter: blur(0.5em);
   -webkit-backdrop-filter: blur(0.5em);
   border-radius: 50%;
@@ -1780,6 +1786,7 @@ button {
 
 .c-portfolio__component--text h5 {
   color: #ff0000;
+  cursor: pointer;
   min-height: 2em;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
