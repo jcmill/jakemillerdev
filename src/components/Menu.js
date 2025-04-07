@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import iconCodepen from "../images/icons/icon-codepen.svg";
 import iconLinkedIn from "../images/icons/icon-linkedin-light.svg";
 
@@ -14,20 +15,20 @@ export default function Menu({ handleHamburgerClick }) {
             <b>Menu</b>
           </p>
           <ul>
-            <a href="#hero" onClick={handleHamburgerClick}>
+            <Link to="/" onClick={handleHamburgerClick}>
               <li
                 className="c-burger__menu--home js-text-element"
                 data-value="Home">
                 Home
               </li>
-            </a>
-            <a href="#work" onClick={handleHamburgerClick}>
+            </Link>
+            <Link to="/test" onClick={handleHamburgerClick}>
               <li
                 className="c-burger__menu--work js-text-element"
                 data-value="Work">
                 Work
               </li>
-            </a>
+            </Link>
             <a href="#about" onClick={handleHamburgerClick}>
               <li
                 className="c-burger__menu--about js-text-element"

@@ -13,6 +13,7 @@ export default function NavHamburger() {
     const btnHamburger = document.querySelector(".js-hamburger");
     const menu = document.querySelector(".js-menu");
     const menuContent = document.querySelector(".js-menu__content");
+    const burgerLines = document.querySelectorAll(".js-burger__container");
 
     if (!btnHamburger || !menuContent) {
       console.error("Something is wrong with btnHamburger or menuContent!");
@@ -27,11 +28,17 @@ export default function NavHamburger() {
           btnHamburger.classList.add("nav-active");
           menu.classList.add("c-menu--open");
           menuContent.classList.remove("hide");
+          burgerLines.forEach((line) => {
+            line.classList.add("c-burger__container--menu");
+          });
         }, 0);
       } else if (act === "remove") {
         bodyContainer.classList.remove("o-noscroll");
         btnHamburger.classList.remove("nav-active");
         menu.classList.remove("c-menu--open");
+        burgerLines.forEach((line) => {
+          line.classList.remove("c-burger__container--menu");
+        });
         setTimeout(() => {
           menu.classList.add("hide");
           menuContent.classList.add("hide");

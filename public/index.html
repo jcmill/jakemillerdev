@@ -7,6 +7,7 @@
   <meta name="theme-color" content="#000000" />
   <meta name="description" content="Web site created using create-react-app" />
   <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+  <link rel="stylesheet" href="./loader.css">
   <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
@@ -25,19 +26,11 @@
   <title>Jake Miller</title>
 </head>
 <body>
-  <nav class="nav-list">
-    <ul class="js-nav"><a href="#work">
-        <li class="nav-list__item--lt js-nav-item js-text-element" data-value="Work">Work</li>
-      </a><a href="#about">
-        <li class="nav-list__item--lt js-nav-item js-text-element" data-value="About">About</li>
-      </a><a href="#contact">
-        <li class="nav-list__item--lt js-nav-item js-text-element" data-value="Contact">Contact</li>
-      </a></ul>
-  </nav>
-  <div class="o-circle js-circle js-circle--invisible"><img src="./images/icons/icon-eye-light-slow.svg" alt="">
+  <div class="c-loader">
+    <img src="./images/logos/loader.svg" alt="">
   </div>
-  <main>
-  </main>
+  <div id="root"></div>
+
   <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.

@@ -1,0 +1,14 @@
+.c-loader {
+  align-items: center;
+  background: #3b3b3b;
+  display: grid;
+  height: 100dvh;
+  justify-content: center;
+  position: relative;
+  width: 100dvw;
+  z-index: 100;
+
+  img {
+    width: 3em;
+  }
+}

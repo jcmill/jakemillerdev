@@ -334,9 +334,9 @@ nav .disclaimer {
   }
 }
 html {
+  background: #3b3b3b;
   scroll-behavior: smooth;
 }
-
 body {
   background: #3b3b3b;
   -webkit-box-sizing: border-box;
@@ -403,6 +403,48 @@ section {
   height: auto;
   inset: 0 auto auto 0;
   pointer-events: none;
+  width: 100dvw;
+  z-index: 1;
+}
+
+.t-wrapper {
+  position: relative;
+  z-index: 0;
+}
+
+.t-background {
+  background: #000;
+  height: 100dvh;
+  inset: 0 auto auto 0;
+  pointer-events: none;
+  position: fixed;
+  width: 100dvw;
+  z-index: 3;
+}
+
+.t-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 3fr 1fr 1fr 3fr 1fr;
+  height: 100dvh;
+  inset: 0 auto auto 0;
+  pointer-events: none;
+  position: fixed;
+  width: 100dvw;
+  z-index: 4;
+
+  div {
+    background: #3b3b3b;
+    height: 100dvh;
+    position: relative;
+  }
+}
+
+.slider {
+  background-color: #3b3b3b;
+  backdrop-filter: blur(0.5em);
+  height: 100dvh;
+  inset: 0 auto auto 0;
+  position: fixed;
   width: 100dvw;
   z-index: 1;
 }
@@ -3111,7 +3153,7 @@ header {
   grid-template-columns: 1fr;
   grid-template-rows: 2fr;
   inset: 1.5em auto auto auto;
-  position: sticky;
+  position: fixed;
   z-index: 776;
 }
 
@@ -3306,12 +3348,17 @@ header .o-grid-icon {
     inset: 2em 2em auto auto;
   }
 }
+
 .c-burger__container--lt {
   background: #ede9e4;
 }
 
 .c-burger__container--dk {
   background: #3b3b3b;
+}
+
+.c-burger__container--menu {
+  background: #ede9e4;
 }
 
 .nav-active {

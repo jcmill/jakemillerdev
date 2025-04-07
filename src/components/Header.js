@@ -17,7 +17,7 @@ export default function Header() {
           <img className="js-logo--lt o-logo--lt" src={logo} alt="Jake logo" />
         </a>
       </div>
-      <div className="js-icon o-icon js-icon-rise">
+      <div className="js-icon o-icon js-icon-rise hide">
         <button className="logo" href="#" onClick={scrollToTop}>
           <img
             className="js-icon--dk o-icon--dk js-logo-invisible"
