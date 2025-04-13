@@ -1,6 +1,6 @@
 .c-loader {
   align-items: center;
-  background: #3b3b3b;
+  background: #333;
   display: grid;
   height: 100dvh;
   justify-content: center;
@@ -9,6 +9,30 @@
   z-index: 100;
 
   img {
+    animation: grow 2s ease-in-out 0s;
+    opacity: 0;
     width: 3em;
+  }
+}
+@keyframes grow {
+  0% {
+    opacity: 0;
+    /* translate: 0 0; */
+    /* width: 3em; */
+  }
+  40% {
+    opacity: 1;
+    /* translate: 0 0; */
+    /* width: 3em; */
+  }
+  85% {
+    opacity: 1;
+    /* translate: 0 0; */
+    /* width: 3em; */
+  }
+  100% {
+    opacity: 0;
+    /* translate: 0 3000%; */
+    /* width: 3em; */
   }
 }

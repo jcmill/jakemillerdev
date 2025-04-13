@@ -6,7 +6,7 @@ export default function useTextAnimation() {
     const words = ["create", "envision", "design", "imagine", "invent"];
     const heroElements = document.querySelectorAll(".js-hero-element");
 
-    primeAnimate(heroElements, words, 6000);
+    primeAnimate(heroElements, words, 5000);
 
     function primeAnimate(elements, words = null, time = 5000) {
       elements.forEach((element) => {

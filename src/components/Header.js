@@ -1,4 +1,6 @@
+import { Link } from "react-router-dom";
 import logo from "../images/logos/logo.svg";
+import logoDark from "../images/logos/logo-dk.svg";
 import darkIcon from "../images/icons/icon-dk.svg";
 import lightIcon from "../images/icons/icon-lt.svg";
 
@@ -13,9 +15,14 @@ export default function Header() {
   return (
     <header>
       <div className="o-logo js-logo">
-        <a href="index.html">
-          <img className="js-logo--lt o-logo--lt" src={logo} alt="Jake logo" />
-        </a>
+        <Link to="/" className="o-logo__grid">
+          <img
+            className="o-logo--dk js-logo--dk"
+            src={logoDark}
+            alt="Jake logo"
+          />
+          <img className="o-logo--lt js-logo--lt" src={logo} alt="Jake logo" />
+        </Link>
       </div>
       <div className="js-icon o-icon js-icon-rise hide">
         <button className="logo" href="#" onClick={scrollToTop}>

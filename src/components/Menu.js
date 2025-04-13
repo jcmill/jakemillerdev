@@ -1,12 +1,8 @@
-import { Link } from "react-router-dom";
+import { HashLink as Link } from "react-router-hash-link";
 import iconCodepen from "../images/icons/icon-codepen.svg";
 import iconLinkedIn from "../images/icons/icon-linkedin-light.svg";
 
 export default function Menu({ handleHamburgerClick }) {
-  const handleClickAndScroll = () => {
-    handleHamburgerClick();
-    window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
-  };
   return (
     <menu className="c-menu js-menu hide">
       <div className="c-menu__wrapper js-menu__content">
@@ -22,31 +18,38 @@ export default function Menu({ handleHamburgerClick }) {
                 Home
               </li>
             </Link>
-            <Link to="/test" onClick={handleHamburgerClick}>
+            <Link smooth to="/#work" onClick={handleHamburgerClick}>
               <li
                 className="c-burger__menu--work js-text-element"
                 data-value="Work">
                 Work
               </li>
             </Link>
-            <a href="#about" onClick={handleHamburgerClick}>
+            <Link smooth to="/#about" onClick={handleHamburgerClick}>
               <li
                 className="c-burger__menu--about js-text-element"
                 data-value="About">
                 About
               </li>
-            </a>
+            </Link>
+            <Link to="/contact" onClick={handleHamburgerClick}>
+              <li
+                className="c-burger__menu--work js-text-element"
+                data-value="Contact">
+                Contact
+              </li>
+            </Link>
           </ul>
-          <a href="#contact" onClick={handleClickAndScroll}>
-            <h4 className="js-text-element" data-value="Let's Talk">
-              Let's Talk
-            </h4>
-          </a>
           <div className="c-menu__social">
             <div className="c-menu__social--icons">
-              {" "}
-              <img className="social" src={iconCodepen} alt="" />
-              <img className="social" src={iconLinkedIn} alt="" />
+              <a href="https://codepen.io/sc1re" alt="CodePen link">
+                <img src={iconCodepen} alt="" />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/jakemillerdev/"
+                alt="LinkedIn link">
+                <img src={iconLinkedIn} alt="" />
+              </a>
             </div>
             <span className="disclaimer">
               ©Jake Miller — Building since 2008

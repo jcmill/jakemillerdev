@@ -1,15 +1,47 @@
-import { useState } from "react";
-import Project from "../components/Project";
+import { useState, useEffect } from "react";
+import Project from "../components/HomeProject";
 import Canvas from "../components/Canvas";
 import portfolio from "../data/portfolio";
 
-export default function Work() {
-  const [filterType, setFilterType] = useState("dev");
-  const [isScaled, setIsScaled] = useState(false);
+export default function Work({ handleProjectId }) {
+  const [filterType, setFilterType] = useState(() => {
+    return sessionStorage.getItem("filterType") || "dev";
+  });
+  const [isScaled, setIsScaled] = useState(() => {
+    return sessionStorage.getItem("isScaled") === "true";
+  });
   const [renderCanvas, setRenderCanvas] = useState(true);
   const [filteredPortfolio, setFilteredPortfolio] = useState(
     portfolio.filter((piece) => piece.options[filterType])
   );
+
+  useEffect(() => {
+    const filtered = portfolio.filter((piece) => {
+      if (filterType === "all") {
+        return piece.options.dev || piece.options["ui/ux"];
+      }
+      return piece.options[filterType];
+    });
+    setFilteredPortfolio(filtered);
+  }, [filterType]);
+
+  useEffect(() => {
+    sessionStorage.setItem("filterType", filterType);
+  }, [filterType]);
+
+  useEffect(() => {
+    sessionStorage.setItem("isScaled", isScaled);
+  }, [isScaled]);
+
+  useEffect(() => {
+    window.onbeforeunload = () => {
+      sessionStorage.clear();
+    };
+
+    return () => {
+      window.onbeforeunload = null;
+    };
+  }, []);
 
   const handleFilterClick = (e) => {
     const type = e.target.value;
@@ -29,6 +61,11 @@ export default function Work() {
       setRenderCanvas(false);
       setTimeout(() => setRenderCanvas(true), 0);
     }
+  };
+
+  const handleFilterState = (type) => {
+    setFilterType(type);
+    setIsScaled(true);
   };
 
   return (
@@ -67,6 +104,9 @@ export default function Work() {
               key={piece.id}
               piece={piece}
               index={i}
+              type={filterType}
+              handleProjectId={handleProjectId}
+              handleFilterState={handleFilterState}
             />
           );
         })}

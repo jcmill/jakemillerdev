@@ -2,14 +2,15 @@ import { useState, useEffect } from "react";
 import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
 import Home from "./pages/Home";
+import Contact from "./pages/Contact";
 import Test from "./pages/TestPage";
-// import NavHamburger from "./components/NavHamburger";
-// import Header from "./components/Header";
 import Footer from "./layouts/Footer";
+import Project from "./pages/Project";
+import NotFound from "./pages/NoFound";
 import Ascii from "./hooks/useLog";
 import ScrollToTop from "./hooks/useScrollToTop";
 
-function AnimatedRoutes() {
+function AnimatedRoutes({ handleProjectId, handleProject }) {
   ScrollToTop();
   const location = useLocation();
   return (
@@ -20,7 +21,7 @@ function AnimatedRoutes() {
           element={
             <TransitionWrapper>
               <main>
-                <Home />
+                <Home handleProjectId={handleProjectId} />
               </main>
               <Footer />
             </TransitionWrapper>
@@ -34,6 +35,35 @@ function AnimatedRoutes() {
                 <Test />
               </main>
               <Footer />
+            </TransitionWrapper>
+          }
+        />
+        <Route
+          path={`/${handleProject.urlRoute}`}
+          element={
+            <TransitionWrapper>
+              <main>
+                <Project piece={handleProject} />
+              </main>
+              <Footer />
+            </TransitionWrapper>
+          }
+        />
+        <Route
+          path="/contact"
+          element={
+            <TransitionWrapper>
+              <Contact />
+            </TransitionWrapper>
+          }
+        />
+        <Route
+          path="/*"
+          element={
+            <TransitionWrapper>
+              <main>
+                <NotFound />
+              </main>
             </TransitionWrapper>
           }
         />
@@ -108,6 +138,8 @@ function TransitionWrapper({ children }) {
 }
 
 export default function App() {
+  const [project, setProjectId] = useState({});
+
   Ascii();
   const [isLoader, setLoader] = useState(true);
   useEffect(() => {
@@ -126,7 +158,10 @@ export default function App() {
     <>
       {isLoader ? null : (
         <BrowserRouter>
-          <AnimatedRoutes />
+          <AnimatedRoutes
+            handleProjectId={setProjectId}
+            handleProject={project}
+          />
         </BrowserRouter>
       )}
     </>

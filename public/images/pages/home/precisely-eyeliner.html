@@ -1,0 +1,607 @@
+<link rel="stylesheet"
+  href="https://images.marketamerica.com/cdn/interactive-bootstrap-template/css/2.1/interactive-bootstrap.css?=v2">
+
+<style>
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  #page {
+    overflow: visible !important;
+  }
+
+  #footer {
+    overflow-x: hidden !important;
+  }
+
+  #footer .link-to .link-to-page {
+    height: auto !important;
+  }
+
+  #footer .link-to .link-to-page button,
+  #footer .link-to .link-to-page label.label {
+    white-space: normal !important;
+  }
+
+  #jira111142 * {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    transition: all 0.5s ease-out;
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+  }
+
+  #jira111142 {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    color: black;
+    font: normal 16px "Montserrat", sans-serif;
+    margin: 0;
+    overflow-x: clip;
+    padding: 0;
+  }
+
+  #jira111142 ul[role=list],
+  #jira111142 ol[role=list] {
+    list-style: none;
+  }
+
+  #jira111142 li {
+    color: #707070;
+    font-size: 1em;
+    font-weight: 300;
+    line-height: 1.6;
+    list-style: none;
+    margin-top: 0.25em;
+    text-indent: -1.2em;
+  }
+
+  #jira111142 a {
+    border-bottom: 0.2em solid white;
+    color: white;
+    font-size: clamp(1em, 5vw, 1.1em);
+    font-weight: 500;
+    padding-bottom: 0.2em;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  #jira111142 a:hover {
+    color: #ACACAC;
+    border-bottom: 0.2em solid #ACACAC;
+  }
+
+  #jira111142 button {
+    background: none;
+    border: none;
+    border-bottom: 0.2em solid white;
+    border-radius: 0;
+    color: white;
+    font-size: clamp(1em, 5vw, 1.2em);
+    font-weight: 500;
+    padding: 0;
+    padding-bottom: 0.2em;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  #jira111142 button:hover {
+    color: #ACACAC;
+    border-bottom: 0.2em solid #ACACAC;
+  }
+
+  #jira111142 img,
+  #jira111142 picture {
+    width: 100%;
+    display: block;
+  }
+
+  #jira111142 input,
+  #jira111142 textarea,
+  #jira111142 select {
+    font: inherit;
+  }
+
+  #jira111142 h1,
+  #jira111142 h2,
+  #jira111142 h3,
+  #jira111142 h4,
+  #jira111142 li,
+  #jira111142 p {
+    color: #707070;
+    font-weight: 400;
+    text-wrap: balance;
+  }
+
+  #jira111142 h1 {
+    color: black;
+    font-size: clamp(2em, 10vw, 3.3em);
+    line-height: 1.06;
+    text-transform: uppercase;
+  }
+
+  #jira111142 h2 {
+    font-size: clamp(1.8em, 8vw, 2em);
+  }
+
+  #jira111142 h3 {
+    font-size: clamp(1.6em, 7vw, 1.8em);
+    margin-top: 0.5em;
+  }
+
+  #jira111142 h4 {
+    font-size: clamp(1.25em, 5vw, 1.5em);
+    margin-top: 1em;
+  }
+
+  #jira111142 sup {
+    font-size: 0.5em;
+  }
+
+  #jira111142 p {
+    font-size: 1em;
+    line-height: 1.6;
+  }
+
+  #jira111142 p b {
+    font-size: 1.1em;
+  }
+
+  #jira111142 section {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+  }
+
+  #jira111142 .o-line {
+    display: block;
+    position: relative;
+    transform-origin: top;
+  }
+
+  #jira111142 .o-line::before {
+    background: #ACACAC;
+    content: "";
+    inset: 0 auto 0 0;
+    position: absolute;
+    width: 1px;
+  }
+
+  #jira111142 .c-hero {
+    display: grid;
+    row-gap: 1em;
+    grid-template-columns: repeat(14, 1fr);
+    grid-template-rows: 0.5fr 5fr 2fr 1fr;
+    height: calc(100vh - 0px);
+    overflow: hidden;
+    width: 100vw;
+  }
+
+  #jira111142 .c-hero__logo {
+    animation: transitionLeft 0.5s cubic-bezier(0.13, 0.72, 0.37, 0.91) 0.2s 1 backwards;
+    align-self: end;
+    grid-column: 4/span 8;
+    grid-row: 1/span 1;
+  }
+
+  #jira111142 .c-hero__content {
+    animation: transitionLeft 0.5s ease-out 0.4s 1 backwards;
+    display: flex;
+    flex-direction: column;
+    grid-column: 2/span 12;
+    grid-row: 3/span 1;
+    height: 100%;
+    justify-content: end;
+    text-align: center;
+  }
+
+  #jira111142 .c-hero .o-line {
+    animation: transitionLeft 0.5s ease-out 0.6s 1 backwards;
+    grid-column: 8/span 1;
+    grid-row: 4/span 1;
+    height: 2em;
+  }
+
+  #jira111142 .c-hero .o-line::before {
+    animation: heroLine 2.5s cubic-bezier(0.13, 0.72, 0.37, 0.91) infinite;
+    transform: scaleY(0);
+  }
+
+  #jira111142 .c-hero__img {
+    animation: transitionRight 0.5s ease-out 0.6s 1 backwards, heroTransition 6s ease infinite;
+    background: url("https://images.marketamerica.com/creative/2023/motives-usa-eng-111142-precisely-the-point-eyeliner-atc-lp/hero-b-1.jpg") no-repeat center center;
+    background-size: cover;
+    grid-column: 1/span 14;
+    grid-row: 2/span 1;
+    transform: translateX(0%);
+  }
+
+  #jira111142 .c-product {
+    align-items: center;
+    background: #FBF7F6;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+  }
+
+  #jira111142 .o-cashback {
+    width: 1em;
+  }
+
+  #jira111142 .c-reviews {
+    padding: 5em 3em;
+  }
+
+  #jira111142 .c-reviews p {
+    margin: 0 0 1em 0;
+  }
+
+  #jira111142 .c-reviews .js-line--vrt {
+    background: #ACACAC;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    transform: scaleY(1);
+    transition-duration: 1s;
+    transform-origin: top;
+    width: 1px;
+  }
+
+  #jira111142 .c-reviews .js-line--vrt--show {
+    transform: scaleY(0);
+    transition-duration: 1s;
+    transform-origin: top;
+  }
+
+  #jira111142 .c-reviews .js-line--hrz {
+    background: #ACACAC;
+    height: 1px;
+    bottom: 0;
+    position: absolute;
+    transform: scaleX(1);
+    transition-duration: 0.4s;
+    transform-origin: left;
+    width: 100%;
+  }
+
+  #jira111142 .c-reviews .js-line--hrz--show {
+    transform: scaleX(0);
+    transition-duration: 0.4s;
+    transform-origin: left;
+  }
+
+  #jira111142 .c-reviews .star__rating {
+    height: 30px;
+    padding-bottom: 3em;
+    position: relative;
+    width: 150px;
+  }
+
+  #jira111142 .c-reviews .star__rating::before {
+    background: url("https://images.marketamerica.com/creative/2023/isotonix-usa-108036-opc3-social-commerce-lp/star-rating-brands.svg?=black") repeat-x left/30px;
+    content: "";
+    height: 30px;
+    left: 0;
+    position: absolute;
+  }
+
+  #jira111142 .c-reviews .star__rating::before {
+    width: 100%;
+  }
+
+  #jira111142 .c-wing-demo {
+    background: #FBF7F6;
+    padding: 5em 0 .5em 0;
+  }
+
+  #jira111142 .c-wing-demo h2 {
+    margin-bottom: 2em;
+  }
+
+  #jira111142 .c-sticky__bar {
+    align-items: center;
+    background: black;
+    bottom: 0;
+    display: flex;
+    gap: 2vw;
+    justify-content: center;
+    position: sticky;
+    width: 100vw;
+  }
+
+  #jira111142 .c-sticky__bar .prod__name {
+    display: none;
+  }
+
+  #jira111142 .c-sticky__bar h4 {
+    color: white;
+    font-size: 1em;
+    margin: 0;
+  }
+
+  #jira111142 .c-sticky__bar button {
+    margin: 0.625em 0;
+  }
+
+  @media screen and (min-width: 768px) {
+    #jira111142 .c-hero__logo img {
+      margin: 0 auto;
+      width: 50%;
+    }
+
+    #jira111142 .c-sticky__bar button {
+      margin: 0.8em 0;
+    }
+  }
+
+  @media screen and (min-width: 992px) {
+    #jira111142 .c-hero {
+      grid-template-columns: 0.5fr 2fr 2fr 0.5fr repeat(10, 1fr) 0.5fr;
+      grid-template-rows: repeat(14, 1fr);
+    }
+
+    #jira111142 .c-hero__logo {
+      grid-column: 2/span 1;
+      grid-row: 2/span 1;
+    }
+
+    #jira111142 .c-hero__logo img {
+      margin: 0;
+      width: 80%;
+    }
+
+    #jira111142 .c-hero__content {
+      grid-column: 2/span 2;
+      grid-row: 4/span 6;
+      text-align: left;
+    }
+
+    #jira111142 .c-hero .o-line {
+      grid-column: 3/span 1;
+      grid-row: 11/span 1;
+      height: 3em;
+    }
+
+    #jira111142 .c-hero__img {
+      grid-column: 5/last-line;
+      grid-row: 1/span 14;
+      height: 100vh;
+    }
+
+    #jira111142 .c-sticky__bar .prod__name {
+      display: initial;
+    }
+
+    #jira111142 .c-sticky__bar h4 {
+      font-size: 1.5em;
+    }
+
+    #jira111142 .c-sticky__bar button {
+      margin: .65em 0;
+    }
+  }
+
+  @keyframes heroTransition {
+    0% {
+      background: url("https://images.marketamerica.com/creative/2023/motives-usa-eng-111142-precisely-the-point-eyeliner-atc-lp/hero-a-1.jpg") no-repeat 30% bottom;
+      background-size: cover;
+    }
+
+    33% {
+      background: url("https://images.marketamerica.com/creative/2023/motives-usa-eng-111142-precisely-the-point-eyeliner-atc-lp/hero-a-1.jpg") no-repeat 30% bottom;
+      background-size: cover;
+    }
+
+    35% {
+      background: url("https://images.marketamerica.com/creative/2023/motives-usa-eng-111142-precisely-the-point-eyeliner-atc-lp/hero-b-1.jpg") no-repeat 30% bottom;
+      background-size: cover;
+    }
+
+    75% {
+      background: url("https://images.marketamerica.com/creative/2023/motives-usa-eng-111142-precisely-the-point-eyeliner-atc-lp/hero-b-1.jpg") no-repeat 30% bottom;
+      background-size: cover;
+    }
+
+    77% {
+      background: url("https://images.marketamerica.com/creative/2023/motives-usa-eng-111142-precisely-the-point-eyeliner-atc-lp/hero-a-1.jpg") no-repeat 30% bottom;
+      background-size: cover;
+    }
+
+    100% {
+      background: url("https://images.marketamerica.com/creative/2023/motives-usa-eng-111142-precisely-the-point-eyeliner-atc-lp/hero-a-1.jpg") no-repeat 30% bottom;
+      background-size: cover;
+    }
+  }
+
+  @keyframes heroLine {
+    0% {
+      transform: scaleY(1);
+      transform-origin: bottom;
+    }
+
+    25% {
+      transform: scaleY(0);
+      transform-origin: bottom;
+    }
+
+    75% {
+      transform: scaleY(0);
+      transform-origin: top;
+    }
+
+    100% {
+      transform: scaleY(1);
+      transform-origin: top;
+    }
+  }
+
+  @keyframes transitionRight {
+    0% {
+      transform: translateX(150%);
+    }
+
+    100% {
+      transform: translateX(0%);
+    }
+  }
+
+  @keyframes transitionLeft {
+    0% {
+      transform: translateX(-150%);
+    }
+
+    100% {
+      transform: translateX(0%);
+    }
+  }
+</style>
+<div class="interactiveBs" id="jira111142">
+  <section class="c-hero">
+    <div class="c-hero__logo"><img
+        src="https://images.marketamerica.com/creative/2023/motives-usa-eng-111142-precisely-the-point-eyeliner-atc-lp/motives-logo.svg"
+        alt=""></div>
+    <div class="c-hero__content">
+      <h1>Precisely The Point Eye Line</h1>
+      <h4>An eyeliner for ultimate precision in one stroke</h4>
+    </div>
+    <div class="o-line"></div>
+    <div class="c-hero__img"></div>
+  </section>
+  <section class="container-fluid c-product">
+    <div class="row">
+      <div class="col-8 offset-2 col-lg-4 offset-lg-1 c-product--img"><img
+          src="https://images.marketamerica.com/creative/2023/motives-usa-eng-111142-precisely-the-point-eyeliner-atc-lp/product.jpg"
+          alt=""></div>
+      <div class="col-10 offset-1 col-lg-5 d-flex flex-column justify-content-center c-product--copy">
+        <h2 class="text-center text-lg-left">Motives<sup>® </sup>Precisely The Point Eye Line</h2>
+        <div class="c-cb d-flex align-items-center justify-content-center justify-content-md-start">
+          <p class="py-2 my-0">Earn 2%</p><img class="o-cashback py-2 ml-1 my-0" src="https://images.marketamerica.com/creative/2023/ldv-usa-eng-111665-pm-eye-lift-atc-lp/cashback-blk.svg
+  " alt="cashback icon">
+          <p class="py-2 ml-1 my-0"> <b>Cashback</b></p>
+        </div>
+        <p>Let’s get to the point: Eyeliner can be easy. Achieve professional-level application with defined lines and
+          precise winged looks with this fine-tipped liner. Experience intense color payoff that glides on effortlessly
+          and dries instantly so you look polished and put together all day.</p>
+        <ul class="text-left">
+          <li>— Water-resistant for lasting wear</li>
+          <li>— Delivers ultra-pigmented color for dramatic, seamless application</li>
+          <li>— Dries instantly to prevent smudges and smears</li>
+          <li>— Superfine felt tip allows for ultimate control of delicate lines</li>
+          <li>— Paraben free</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section class="containter-fluid c-gallery">
+    <div class="row no-gutters">
+      <div class="col-12 col-lg-4 px-0"><img
+          src="https://images.marketamerica.com/creative/2023/motives-usa-eng-111142-precisely-the-point-eyeliner-atc-lp/img-1a.jpg"
+          alt=""></div>
+      <div class="col-12 col-lg-4 px-0"><img
+          src="https://images.marketamerica.com/creative/2023/motives-usa-eng-111142-precisely-the-point-eyeliner-atc-lp/img-2.jpg"
+          alt=""></div>
+      <div class="col-12 col-lg-4 px-0"><img
+          src="https://images.marketamerica.com/creative/2023/motives-usa-eng-111142-precisely-the-point-eyeliner-atc-lp/img-3.jpg"
+          alt=""></div>
+    </div>
+  </section>
+  <section class="container-fluid c-reviews">
+    <div class="row pt-5">
+      <div class="col-12 pl-0 col-lg-3 px-lg-5 py-lg-0">
+        <div class="star__rating">
+          <div class="js-line--hrz"></div>
+        </div>
+        <h3>CUSTOMER REVIEWS</h3>
+      </div>
+      <div class="col-12 py-4 col-lg-3 px-lg-5 py-lg-0">
+        <div class="js-line--vrt"></div>
+        <p><b>The Eyeliner I’ve Been Longing For!</b></p>
+        <p>If you are looking for a true black, easy to use eyeliner that stays all day, this is for you! I have oily
+          skin and hooded eyelids and once this eyeliner dries, it won’t transfer AT ALL. It stays put ALL DAY. But it
+          does wash off with my facial cleanser at night so no need for special makeup remover. It glides on so nice and
+          the felt tip end makes it easy to apply. It’s defiantly my go to from now on!</p>
+      </div>
+      <div class="col-12 py-4 col-lg-3 px-lg-5 py-lg-0">
+        <div class="js-line--vrt"></div>
+        <p><b>A must have in my books! Name says it all</b></p>
+        <p>I’m so in love with this liner! The formula is amazing and glides on so effortlessly. It also dries quick so
+          it makes it a breeze to do eyeliner now. I tested this on my hands the first day I got it, and through washing
+          the dishes and some of my tools, plus washing my hands several times, it’s still on my hands the way it was
+          applied on. It’s definitely waterproof and smudge proof, but not the “waterproof” type that flakes. It
+          legitimately stays put!</p>
+      </div>
+      <div class="col-12 py-4 col-lg-3 px-lg-5 py-lg-0">
+        <div class="js-line--vrt"></div>
+        <p><b>The BEST Black eyeliner I’ve Tried. </b></p>
+        <p>It is easy to use. It glides right on your eyelid and doesn’t bleed/smudge. My favorite of all Motives®
+          eyeliners.</p>
+      </div>
+    </div>
+  </section>
+  <section class="container-fluid c-wing-demo">
+    <div class="row no-gutters">
+      <div class="col-12 text-center">
+        <h2>Easy Application Steps</h2>
+      </div>
+      <div class="col-6 col-lg-3 px-0"><img
+          src="https://images.marketamerica.com/creative/2023/motives-usa-eng-111142-precisely-the-point-eyeliner-atc-lp/wings-1.jpg"
+          alt=""></div>
+      <div class="col-6 col-lg-3 px-0"><img
+          src="https://images.marketamerica.com/creative/2023/motives-usa-eng-111142-precisely-the-point-eyeliner-atc-lp/wings-2.jpg"
+          alt=""></div>
+      <div class="col-6 col-lg-3 px-0"><img
+          src="https://images.marketamerica.com/creative/2023/motives-usa-eng-111142-precisely-the-point-eyeliner-atc-lp/wings-3.jpg"
+          alt=""></div>
+      <div class="col-6 col-lg-3 px-0"><img
+          src="https://images.marketamerica.com/creative/2023/motives-usa-eng-111142-precisely-the-point-eyeliner-atc-lp/wings-4.jpg"
+          alt=""></div>
+    </div>
+  </section>
+  <div class="c-sticky__bar">
+    <h4 class="prod__name">Motives<sup>® </sup>Precisely The Point Eye Line</h4>
+    <button class="js-buy-now-landing button" autocomplete="off" type="button" value="Buy Now" data-prod-id="1845794969"
+      data-sku="27ELP" data-prod-name="Motives® Precisely The Point Eye Line">Buy Now $22</button>
+  </div>
+</div>
+
+<script>
+  const lines = document.querySelectorAll('.js-line--vrt');
+  const lineHrz = document.querySelector('.js-line--hrz');
+
+  const observerVrt = new IntersectionObserver(entries => {
+    entries.forEach((entry, i) => {
+      setTimeout(() => {
+        entry.target.classList.toggle('js-line--vrt--show')
+      }, i * 400);
+    });
+  },
+    {
+      delay: 400,
+      threshold: .5,
+    }
+  );
+
+  const observerHrz = new IntersectionObserver(hrz => {
+    lineHrz.classList.toggle('js-line--hrz--show');
+  },
+    {
+      delay: 300,
+      threshold: .5,
+    }
+  );
+
+  lines.forEach(line => {
+    observerVrt.observe(line);
+  });
+
+  observerHrz.observe(lineHrz);
+</script>

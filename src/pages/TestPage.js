@@ -1,4 +1,5 @@
-import About from "../layouts/About";
+// import Hero from "../layouts/HeroTest";
+import About from "../layouts/AboutTest";
 import Canvas from "../components/Canvas";
 import NavHamburger from "../components/NavHamburger";
 import Header from "../components/Header";
@@ -12,6 +13,8 @@ export default function App() {
     <>
       <Header />
       <NavHamburger />
+      {/* <Hero /> */}
+      <About />
       <Canvas />
       <About />
     </>

@@ -7,7 +7,6 @@ export default function useHoverImage() {
     const imgHover = document.querySelectorAll(".js-hover-image");
 
     if (!mouseCircle || !circleHover || imgHover.length === 0) {
-      console.error("Something is wrong!");
       return;
     }
 

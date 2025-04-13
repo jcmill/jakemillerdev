@@ -16,11 +16,14 @@ var iconActions = document.querySelector(".js-icon");
 /// logo dark/light
 // observer options to tigger change at correct point on section
 var lightbgObserverOptions = {
-  rootMargin: "-32px 0px -95% 0px"
+  rootMargin: "-32px 0px -95% 0px",
 };
 
 // observer funtion to add and remove classes associated with logo/icon color change
-var lightbgObserver = new IntersectionObserver(function (entries, lightbgObserver) {
+var lightbgObserver = new IntersectionObserver(function (
+  entries,
+  lightbgObserver
+) {
   entries.forEach(function (entry) {
     if (!entry.isIntersecting) {
       iconDark.classList.add("js-logo-invisible");
@@ -33,7 +36,6 @@ var lightbgObserver = new IntersectionObserver(function (entries, lightbgObserve
         e.classList.add("nav-list__item--lt");
         e.classList.remove("nav-list__item--dk");
       });
-      // return;
     } else {
       iconDark.classList.remove("js-logo-invisible");
       iconLight.classList.add("js-logo-invisible");
@@ -47,7 +49,8 @@ var lightbgObserver = new IntersectionObserver(function (entries, lightbgObserve
       });
     }
   });
-}, lightbgObserverOptions); // callback to observer margin options
+},
+lightbgObserverOptions); // callback to observer margin options
 
 // initiate observer funtion for all sections with a light background
 bgLight.forEach(function (target) {
@@ -102,7 +105,6 @@ imgHover.forEach(function (entry, index) {
   entry.addEventListener("mouseleave", function (e) {
     circleHover.classList.add("js-circle--invisible");
     imgHover[imgHoverIndex].classList.toggle("js-hide");
-    imgHover[imgHoverIndex].pause();
   });
   circleHover.addEventListener("mouseleave", function (e) {
     circleHover.classList.add("js-circle--invisible");
@@ -113,7 +115,9 @@ imgHover.forEach(function (entry, index) {
 ///////
 //// scroll direction
 // Define scrollOld as a global variable
-var scrollOld = 0;
+let scrollOld = 0;
+let scrollY;
+
 function scrollDirection() {
   if (scrollY === 0) {
     logoRise.classList.remove("js-logo-rise");

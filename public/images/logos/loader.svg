@@ -7,39 +7,39 @@
       }
 
       .rect {
-        fill: #3b3b3b;
+        fill: #333;
         translate: 0 -100%;
       }
 
-      .rect-main {
-        animation: scrollDown .25s ease-in-out 1.75s forwards;
+      <!-- .rect-main {
+        animation: scrollDown .25s ease-in-out 1.5s forwards;
       }
       .rect-1 {
-        animation: scrollDown .5s ease-in-out 1s forwards;
+        animation: scrollDown .3s ease-in-out 1s forwards;
       }
       .rect-2 {
-        animation: scrollDown .5s ease-in-out .9s forwards;
+        animation: scrollDown .3s ease-in-out .9s forwards;
       }
       .rect-3 {
-        animation: scrollDown .5s ease-in-out 1.3s forwards;
+        animation: scrollDown .3s ease-in-out 1.3s forwards;
       }
       .rect-4 {
-        animation: scrollDown .5s ease-in-out 1.1s forwards;
+        animation: scrollDown .3s ease-in-out 1.1s forwards;
       }
       .rect-5 {
-        animation: scrollDown .5s ease-in-out 1.2s forwards;
+        animation: scrollDown .3s ease-in-out 1.2s forwards;
       }
       .rect-6 {
-        animation: scrollDown .5s ease-in-out 1.4s forwards;
+        animation: scrollDown .3s ease-in-out 1.3s forwards;
       }
       .rect-7 {
-        animation: scrollDown .5s ease-in-out 1s forwards;
+        animation: scrollDown .3s ease-in-out 1s forwards;
       }
 
       @keyframes scrollDown {
         from {translate: 0 -100%;}
         to {translate: 0 0%;}
-      }
+      } -->
     </style>
   </defs>
   <path data-name="Path 121" class="logo" d="M664.15,800.46H0v-161.9L253.02,0h158.14l253,638.56v161.9ZM293.98,369.34l-84.43,213.17c-8.32,21.04,1.99,44.84,23.03,53.16,4.78,1.89,9.87,2.86,15.01,2.87h168.86c22.62-.03,40.94-18.4,40.9-41.03,0-5.14-.98-10.23-2.87-15.01l-84.34-213.17c-8.35-21.03-32.16-31.31-53.19-22.97-10.49,4.16-18.8,12.47-22.97,22.97"/>

@@ -16,14 +16,12 @@ export default function Ascii() {
   
   System Log: J∆KE MILLER v1.0
   
-  [*] - Launch Date:            01.04.2025
+  [*] - Launch Date:            04.13.2025
   [*] - Version....:            v1.0
-  [*] - Frontend...:            SASS / PUG / GSAP / React.js / mind powers / and good ol' elbow greese 
-  [*] - Backend....:            Node.js
-  [*] - API........:            WebSockets
-  [*] - Credits....:            Chat GPT
+  [*] - Frontend...:            SASS / PUG / GSAP / React.js / Lottie 
+  [*] - API........:            Web3Forms
   
-  [*] - Notes......:            I fucking hate Apple, but in this case, it unintentionally aligns with 
+  [*] - Notes......:            I hate Apple, but in this case, it unintentionally aligns with 
                                 my original concept. And if you’re wondering why the blur effect on 
                                 page transitions works on Windows devices but doesn’t on Apple 
                                 devices—just read the first words of this paragraph.

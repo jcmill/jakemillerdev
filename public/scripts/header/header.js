@@ -26,7 +26,6 @@ var lightbgObserver = new IntersectionObserver(function (
 ) {
   entries.forEach(function (entry) {
     if (!entry.isIntersecting) {
-      console.log("test NOT");
       iconDark.classList.add("js-logo-invisible");
       iconLight.classList.remove("js-logo-invisible");
       navItem.forEach(function (e) {
@@ -35,7 +34,6 @@ var lightbgObserver = new IntersectionObserver(function (
       });
       // return;
     } else {
-      console.log("test IS");
       iconDark.classList.remove("js-logo-invisible");
       iconLight.classList.add("js-logo-invisible");
       navItem.forEach(function (e) {
@@ -50,7 +48,6 @@ lightbgObserverOptions); // callback to observer margin options
 // initiate observer funtion for all sections with a light background
 bgLight.forEach(function (target) {
   lightbgObserver.observe(target);
-  console.log("test");
 });
 
 //// hover circle mouse follow vars
@@ -95,13 +92,11 @@ imgHover.forEach(function (entry, index) {
     circleHover.addEventListener("mouseenter", function (e) {
       circleHover.classList.remove("js-circle--invisible");
       imgHover[imgHoverIndex].classList.remove("js-hide");
-      imgHover[imgHoverIndex].play();
     });
   });
   entry.addEventListener("mouseleave", function (e) {
     circleHover.classList.add("js-circle--invisible");
     imgHover[imgHoverIndex].classList.toggle("js-hide");
-    imgHover[imgHoverIndex].pause();
   });
   circleHover.addEventListener("mouseleave", function (e) {
     circleHover.classList.add("js-circle--invisible");

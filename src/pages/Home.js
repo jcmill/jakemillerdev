@@ -8,7 +8,7 @@ import Header from "../components/Header";
 import useIconObserver from "../hooks/useIconObserver";
 import useLogoScroll from "../hooks/useLogoScroll";
 
-export default function App() {
+export default function Home({ handleProjectId }) {
   useLogoScroll();
   useIconObserver();
   return (
@@ -18,7 +18,7 @@ export default function App() {
       <GridOverlay />
       <Hero />
       <ImageCurser />
-      <Work />
+      <Work handleProjectId={handleProjectId} />
       <About />
     </>
   );
