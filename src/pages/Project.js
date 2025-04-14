@@ -34,11 +34,11 @@ export default function Project({ piece }) {
           </div>
           {piece.hasBtn && (
             <div className="c-project__details--buttons">
-              <a href={piece.btnUrl}>
+              <a href={piece.btnUrl} target="_blank" rel="noreferrer">
                 <button className="btn-outline-lt">{piece.btnText}</button>
               </a>
               {piece.hasBtn2 && (
-                <a href={piece.btnUrl2}>
+                <a href={piece.btnUrl2} target="_blank" rel="noreferrer">
                   <button className="btn-outline-lt">{piece.btnText2}</button>
                 </a>
               )}

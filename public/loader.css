@@ -17,22 +17,14 @@
 @keyframes grow {
   0% {
     opacity: 0;
-    /* translate: 0 0; */
-    /* width: 3em; */
   }
   40% {
     opacity: 1;
-    /* translate: 0 0; */
-    /* width: 3em; */
   }
   85% {
     opacity: 1;
-    /* translate: 0 0; */
-    /* width: 3em; */
   }
   100% {
     opacity: 0;
-    /* translate: 0 3000%; */
-    /* width: 3em; */
   }
 }

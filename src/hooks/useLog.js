@@ -21,19 +21,26 @@ export default function Ascii() {
   [*] - Frontend...:            SASS / PUG / GSAP / React.js / Lottie 
   [*] - API........:            Web3Forms
   
-  [*] - Notes......:            I hate Apple, but in this case, it unintentionally aligns with 
-                                my original concept. And if you’re wondering why the blur effect on 
-                                page transitions works on Windows devices but doesn’t on Apple 
-                                devices—just read the first words of this paragraph.
+  [*] - Notes......:            The initial version of this project, V1, was a fast, functional build 
+                                developed within my Pug/SASS/JavaScript environment. I had established 
+                                much of the core functionality, but the project was temporarily shelved 
+                                after a career shift led me into a new role and responsibilities. 
+                                Once things settled, I revisited the project with a fresh perspective 
+                                and refined vision. This time, I chose to rebuild the site in React to 
+                                better support scalability and to move to a more component-based 
+                                architecture with the aim to control the entire site through one 
+                                json file.
   
-                                My portfolio and the concept behind it are about direct speech, about 
-                                showing things as they truly are. The absence of blur actually
-                                reinforcesthis idea because it reveals what’s really happening behind 
-                                these transitions — the raw switch from one page to another. 
-                                That’s why I decided not to "fix" this bug.
-  
-                                Which brings up a fair question—why didn’t I apply the same approach 
-                                to Windows? Good question. Why indeed?
+                                In that spirit, I broke my goals down into components—just as I would 
+                                the UI itself. While V1 doesn’t represent a full MVP, it served as a 
+                                thoughtful starting point for mapping out animations, layout patterns, 
+                                and cross-browser functionality. (Yes, Firefox and Safari still keep 
+                                things interesting.) For design inspiration, I returned to the 
+                                fundamentals—revisiting design texts from college and drawing from the 
+                                structured beauty of Constructivism, Bauhaus, and the grid systems of 
+                                Vilmos Husár’s De Stijl work. Layered with my background in mathematics, 
+                                I explored symmetry, number patterns, and the golden ratio to inform 
+                                structure and visual balance throughout this build.
 
   
   ░▒▓██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▓▒░`);

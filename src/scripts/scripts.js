@@ -30,8 +30,10 @@ blurred.forEach(function (entry) {
 primeAnimate(heroElements, words, 6000);
 primeAnimate(textElements);
 function primeAnimate(elements) {
-  var words = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : null;
-  var time = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 5000;
+  var words =
+    arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : null;
+  var time =
+    arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 5000;
   elements.forEach(function (element) {
     var currentWordIndex = 0;
     var logoAnimationIteration = 0;
@@ -40,12 +42,15 @@ function primeAnimate(elements) {
       logoAnimationIteration = 0;
       clearInterval(animationInterval);
       animationInterval = setInterval(function () {
-        element.innerText = word.split("").map(function (letter, index) {
-          if (index < logoAnimationIteration) {
-            return word[index];
-          }
-          return characters[Math.floor(Math.random() * 36)];
-        }).join("");
+        element.innerText = word
+          .split("")
+          .map(function (letter, index) {
+            if (index < logoAnimationIteration) {
+              return word[index];
+            }
+            return characters[Math.floor(Math.random() * 36)];
+          })
+          .join("");
         if (logoAnimationIteration > word.length) {
           clearInterval(animationInterval);
           if (words) {
@@ -88,12 +93,15 @@ function secondaryAnimate(element) {
   clearInterval(animationInterval);
   setTimeout(function () {
     animationInterval = setInterval(function () {
-      element.innerText = element.dataset.value.split("").map(function (letter, index) {
-        if (index < logoAnimationIteration) {
-          return element.dataset.value[index];
-        }
-        return characters[Math.floor(Math.random() * 36)];
-      }).join("");
+      element.innerText = element.dataset.value
+        .split("")
+        .map(function (letter, index) {
+          if (index < logoAnimationIteration) {
+            return element.dataset.value[index];
+          }
+          return characters[Math.floor(Math.random() * 36)];
+        })
+        .join("");
       if (logoAnimationIteration > element.dataset.value.length) {
         clearInterval(animationInterval);
       }

@@ -7,10 +7,8 @@
     "options": {
       "hasUrl": false,
       "dev": true,
-      "ui/ux": false,
-      "hasText2": true
+      "ui/ux": false
     },
-    "url": "https://excalidraw.com/",
     "homeImage": "../images/pages/home/color-curve-home.jpg",
     "homeImageAltText": "Computer on a desktop that shows the code and an example of swatches created by the SCSS Color Curve tool",
     "heroImage": "../images/pages/home/prod-hero-color-curve.jpg",
@@ -40,14 +38,6 @@
       {
         "url": "",
         "altText": ""
-      },
-      {
-        "url": "",
-        "altText": ""
-      },
-      {
-        "url": "",
-        "altText": ""
       }
     ],
     "blurImage": "",
@@ -59,18 +49,10 @@
       {
         "url": "",
         "altText": ""
-      },
-      {
-        "url": "",
-        "altText": ""
       }
     ],
     "hasAltVideoSecond": false,
     "altVideosSecond": [
-      {
-        "url": "",
-        "altText": ""
-      },
       {
         "url": "",
         "altText": ""
@@ -87,8 +69,7 @@
     "text": "In an effort to create more accessible and visually consistent UI color systems, I built and released SCSS Color Curve, a Sass-based color tool that reimagines how we generate color variations. By using an exponential approach to saturation and luminance, this tool produces vibrant, readable gradients that retain their clarity and impact. Even as they shift across the spectrum, the result is a more refined alternative to traditional tint and shade methods.",
     "text2": "What makes this project particularly unique is the lens through which it was developed—literally. With a background in branding, UI design, and mathematics, I approached the challenge not just as a creative or coder, but as someone who has experience in color specific accessibilities. This perspective shaped every part of the tool, from the underlying math to the visual output. SCSS Color Curve is more than a utility—it’s a creative solution built at the intersection of accessibility, design, and engineering.",
     "countryTitle": "Country",
-    "country": "USA",
-    "language": ""
+    "country": "USA"
   },
   {
     "id": 2,
@@ -98,10 +79,8 @@
     "options": {
       "hasUrl": false,
       "dev": false,
-      "ui/ux": true,
-      "hasText2": true
+      "ui/ux": true
     },
-    "url": "https://excalidraw.com/",
     "homeImage": "../images/pages/home/motives-eyeliner-home.jpg",
     "homeImageAltText": "alt text",
     "heroImage": "../images/pages/home/motives-eyeliner-hero.jpg",
@@ -133,10 +112,6 @@
       {
         "url": "",
         "altText": ""
-      },
-      {
-        "url": "",
-        "altText": ""
       }
     ],
     "description": "Curabitur purus felis, ornare ut pharetra et",
@@ -150,8 +125,7 @@
     "text": "This product feature landing page was crafted to serve as both an informative hub and a visual showcase. It offered users a clear, engaging way to explore the project in greater detail, view the model, and interact with key features. The goal was to go beyond surface-level presentation by creating an experience that highlighted the product’s functionality while inviting deeper engagement.",
     "text2": "The design language was directly inspired by the product’s unique capability to create precise, ultra-thin lines. This was reflected in both the typography and layout. The clean line work reinforced a sense of control and accuracy and subtle animations played a key role in bringing the page to life by mimicking the drawing of a line from the moment the page loaded. Thus setting the tone for a seamless, focused interaction throughout the experience.",
     "countryTitle": "Country",
-    "country": "USA",
-    "language": ""
+    "country": "USA"
   },
   {
     "id": 3,
@@ -161,10 +135,8 @@
     "options": {
       "hasUrl": false,
       "dev": false,
-      "ui/ux": true,
-      "hasText2": true
+      "ui/ux": true
     },
-    "url": "https://excalidraw.com/",
     "homeImage": "../images/pages/home/gotrim.jpg",
     "homeImageAltText": "alt text",
     "heroImage": "../images/pages/home/prod-hero-gotrim.jpg",
@@ -210,18 +182,10 @@
       {
         "url": "",
         "altText": ""
-      },
-      {
-        "url": "",
-        "altText": ""
       }
     ],
     "hasAltVideoSecond": false,
     "altVideosSecond": [
-      {
-        "url": "",
-        "altText": ""
-      },
       {
         "url": "",
         "altText": ""
@@ -238,8 +202,7 @@
     "text": "The GoTrim project was a full-scale brand refresh. My role focused on reimagining and redeveloping the website to align with the new visual identity, which included the site itself, and an expansive scope encompassing logo design, product visuals, advertising materials, and the broad digital presence. The project began with the creation of a foundational UI kit that established core elements such as: typography, color palettes, and UI components in order to guide consistency across platforms.",
     "text2": "Starting with the updated logo and product color direction, I developed a cohesive design system that honored the legacy structure of the existing site while bringing it into alignment with the refreshed brand. The earthy tones and organic feel of the new identity led the way with careful selection of web-safe equivalents to ensure accessibility and performance. Even though the initial direction involved a full MVP-style UI kit, evolving priorities required a strategic pivot, which caused a shift from building new components to directly reskinning the existing site. This allowed us to maintain development velocity while still delivering a visually unified and brand-forward experience.",
     "countryTitle": "Countries",
-    "country": "USA, CAN, AUS, HK, TWN, SGP, MY",
-    "language": ""
+    "country": "USA, CAN, AUS, HK, TWN, SGP, MY"
   },
   {
     "id": 4,
@@ -249,10 +212,8 @@
     "options": {
       "hasUrl": false,
       "dev": false,
-      "ui/ux": true,
-      "hasText2": true
+      "ui/ux": true
     },
-    "url": "https://excalidraw.com/",
     "homeImage": "../images/pages/home/dash.jpg",
     "homeImageAltText": "alt text",
     "heroImage": "../images/pages/home/prod-hero-dash.jpg",
@@ -297,8 +258,7 @@
     "text": "Between the Dash was a global event held in honor of the late JR Ridinger, which had attendees from around the world and featured impactful appearances from notable speakers and performers including Fat Joe and Jamie Foxx. Balancing emotional resonance with clear, purposeful action, the landing page for the event served as both an informational hub and a strategic driver for ticket sales.",
     "text2": "The design was deeply inspired by one of JR’s most memorable demonstrations: the significance of the “dash” between the dates on a tombstone. The skit symbolized the life we live and the legacy we leave behind. This theme shaped both the visual language and the content structure, tapping into the emotional depth of the message while reflecting the entrepreneurial spirit JR championed. The layout guided visitors through that narrative journey, blending visual storytelling with practical event details, ultimately supporting both engagement and conversion in a meaningful way.",
     "countryTitle": "Countries",
-    "country": "USA, TWN",
-    "language": ""
+    "country": "USA, TWN"
   },
   {
     "id": 5,
@@ -308,10 +268,8 @@
     "options": {
       "hasUrl": false,
       "dev": true,
-      "ui/ux": true,
-      "hasText2": true
+      "ui/ux": true
     },
-    "url": "https://excalidraw.com/",
     "homeImage": "../images/pages/home/single-page-home.jpg",
     "homeImageAltText": "alt text",
     "heroImage": "../images/pages/home/single-page-hero.jpg",
@@ -324,14 +282,6 @@
     ],
     "hasAltImagesSecond": false,
     "altImagesSecond": [
-      {
-        "url": "",
-        "altText": ""
-      },
-      {
-        "url": "",
-        "altText": ""
-      },
       {
         "url": "",
         "altText": ""
@@ -375,8 +325,7 @@
     "text": "At SHOP.COM and UnFranchise.com, I played a key role in the UI/UX design and front-end development of the company’s product detail page and checkout funnel, which essentially shaped the user journey from the initial product discovery to a final purchase. A major focus of this initiative was the creation of a streamlined, single-page checkout experience designed to reduce friction and improve conversion across both platforms.",
     "text2": "Grounded in extensive competitor research and best practice analysis, we identified key areas where the existing checkout process could be simplified. From there, we developed wireframes aligned with both user expectations and business needs. Wireframes were tested extensively with business owners before moving into implementation. As with previous projects, we faced the unique challenge of balancing SHOP.COM’s modern React-based architecture with the legacy ColdFusion and Bootstrap framework used on UnFranchise.com. Despite the technical differences, the result was a cohesive, user-friendly experience that elevated the checkout journey for both audiences.",
     "countryTitle": "Countries",
-    "country": "USA, TWN",
-    "language": ""
+    "country": "USA, TWN"
   },
   {
     "id": 6,
@@ -386,10 +335,8 @@
     "options": {
       "hasUrl": false,
       "dev": true,
-      "ui/ux": false,
-      "hasText2": true
+      "ui/ux": false
     },
-    "url": "https://excalidraw.com/",
     "homeImage": "../images/pages/home/opc-3.jpg",
     "homeImageAltText": "alt text",
     "heroImage": "../images/pages/home/prod-hero-opc-3.jpg",
@@ -402,14 +349,6 @@
     ],
     "hasAltImagesSecond": false,
     "altImagesSecond": [
-      {
-        "url": "",
-        "altText": ""
-      },
-      {
-        "url": "",
-        "altText": ""
-      },
       {
         "url": "",
         "altText": ""
@@ -432,10 +371,6 @@
       {
         "url": "",
         "altText": ""
-      },
-      {
-        "url": "",
-        "altText": ""
       }
     ],
     "description": "Curabitur purus felis, ornare ut pharetra et",
@@ -449,8 +384,7 @@
     "text": "At SHOP.COM and UnFranchise.com, I played a key role in the development of a fully modular product detail page. Built for flexibility, scalability, and brand adaptability, the system was designed to give Product Managers control over the layout. It enabled them to mix and match from a suite of thirteen custom-built modules, which were each tailored for a wide range of content, languages and presentation needs.",
     "text2": "One of the unique challenges in this project was maintaining design and functional consistency across two vastly different technical environments: a modern React-based architecture for SHOP.COM, and a legacy stack on UnFranchise.com utilizing ColdFusion, Bootstrap, and vanilla CSS. Despite the differences, the result is a cohesive, cross-platform experience. The modular system provides the versatility to create unique, brand-aligned layouts, which ensures that every product page reflects the individuality of the item it represents.",
     "countryTitle": "Countries",
-    "country": "USA, CAN, AUS, HK, TWN, SGP, MY",
-    "language": ""
+    "country": "USA, CAN, AUS, HK, TWN, SGP, MY"
   },
   {
     "id": 7,
@@ -460,10 +394,8 @@
     "options": {
       "hasUrl": false,
       "dev": true,
-      "ui/ux": false,
-      "hasText2": true
+      "ui/ux": false
     },
-    "url": "https://excalidraw.com/",
     "homeImage": "../images/pages/home/ix-home.jpg",
     "homeImageAltText": "alt text",
     "heroImage": "../images/pages/home/prod-hero-ix.jpg",
@@ -473,14 +405,6 @@
     "altImages": [{ "url": "", "altText": "alt text" }],
     "hasAltImagesSecond": false,
     "altImagesSecond": [
-      {
-        "url": "",
-        "altText": ""
-      },
-      {
-        "url": "",
-        "altText": ""
-      },
       {
         "url": "",
         "altText": ""
@@ -503,10 +427,6 @@
       {
         "url": "",
         "altText": ""
-      },
-      {
-        "url": "",
-        "altText": ""
       }
     ],
     "description": "Curabitur purus felis, ornare ut pharetra et",
@@ -520,7 +440,6 @@
     "text": "The Isotonix website rebrand was a full visual overhaul aimed at aligning the existing digital experience with a refreshed print brand identity. My role centered on translating the print brand guide into a cohesive, web-friendly reskin of Isotonix.com. I carefully adapted fonts, colors, and iconography for digital use while maintaining the integrity of the new visual direction.",
     "text2": "In addition to time constraints, A unique hurdle and key priority from the business owner was ensuring the product remained front and center, visibly emphasized across the site and, wherever possible, featured above the fold. This informed both design and layout decisions throughout the reskin, guiding how components were styled and prioritized within the existing structure.",
     "countryTitle": "Countries",
-    "country": "USA, TWN",
-    "language": ""
+    "country": "USA, TWN"
   }
 ]
