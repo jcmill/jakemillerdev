@@ -6,6 +6,13 @@ import Contact from "./pages/Contact";
 import Test from "./pages/TestPage";
 import Footer from "./layouts/Footer";
 import Project from "./pages/Project";
+// import ColorCurve from "./pages/ColorCurve";
+// import MotivesEyeliner from "./pages/MotivesEyeliner";
+// import GotrimRedesign from "./pages/GotrimRedesign";
+// import TheDash from "./pages/TheDash";
+// import SinglePageCheckout from "./pages/SinglePageCheckout";
+// import ProductDetailPage from "./pages/ProductDetailPage";
+// import IsotonixReskin from "./pages/IsotonixReskin";
 import NotFound from "./pages/NoFound";
 import Ascii from "./hooks/useLog";
 import ScrollToTop from "./hooks/useScrollToTop";
@@ -38,6 +45,83 @@ function AnimatedRoutes({ handleProjectId, handleProject }) {
             </TransitionWrapper>
           }
         />
+        {/* <Route
+          path="/project/color-curve"
+          element={
+            <TransitionWrapper>
+              <main>
+                <ColorCurve piece={handleProject} />
+              </main>
+              <Footer />
+            </TransitionWrapper>
+          }
+        />
+        <Route
+          path="/project/motives-eyeliner"
+          element={
+            <TransitionWrapper>
+              <main>
+                <MotivesEyeliner piece={handleProject} />
+              </main>
+              <Footer />
+            </TransitionWrapper>
+          }
+        />
+        <Route
+          path="/project/gotrim-redesign"
+          element={
+            <TransitionWrapper>
+              <main>
+                <GotrimRedesign piece={handleProject} />
+              </main>
+              <Footer />
+            </TransitionWrapper>
+          }
+        />
+        <Route
+          path="/project/the-dash"
+          element={
+            <TransitionWrapper>
+              <main>
+                <TheDash piece={handleProject} />
+              </main>
+              <Footer />
+            </TransitionWrapper>
+          }
+        />
+        <Route
+          path="/project/single-page-checkout"
+          element={
+            <TransitionWrapper>
+              <main>
+                <SinglePageCheckout piece={handleProject} />
+              </main>
+              <Footer />
+            </TransitionWrapper>
+          }
+        />
+        <Route
+          path="/project/product-detail-page"
+          element={
+            <TransitionWrapper>
+              <main>
+                <ProductDetailPage piece={handleProject} />
+              </main>
+              <Footer />
+            </TransitionWrapper>
+          }
+        />
+        <Route
+          path="/project/isotonix-reskin"
+          element={
+            <TransitionWrapper>
+              <main>
+                <IsotonixReskin piece={handleProject} />
+              </main>
+              <Footer />
+            </TransitionWrapper>
+          }
+        /> */}
         <Route
           path={`/${handleProject.urlRoute}`}
           element={

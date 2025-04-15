@@ -120,21 +120,21 @@ export default function HomeProject({
       }>
       <Link to={piece.urlRoute} data-type={type} onClick={handleFilterState}>
         <div ref={imageStackRef} className="o-image--stack js-image--stack">
-          <img
-            className="js-image js-hover-image"
-            src={piece.homeImage}
-            alt=""
-            loading="lazy"
-            data-type={type}
-          />
           <video
-            className="js-image js-hover-image js-hide js-project-vid"
+            className="js-hover-image js-project-vid"
             src={piece.video}
             data-type={type}
             loading="lazy"
             loop
             muted
             playsInline
+          />
+          <img
+            className="js-image js-hover-image"
+            src={piece.homeImage}
+            alt=""
+            loading="lazy"
+            data-type={type}
           />
         </div>
         <div className="c-portfolio__component--text">

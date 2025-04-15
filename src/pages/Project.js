@@ -50,8 +50,8 @@ export default function Project({ piece }) {
           <p>{piece.text2}</p>
         </div>
       </section>
-      <section className="c-project__full-image o-grid js-bgc--dk">
-        <div className="c-project__image-wrapper">
+      <section className="c-project__full-media o-grid js-bgc--dk">
+        <div className="c-project__media-wrapper">
           {piece.hasAltVideos
             ? piece.altVideos.map((p) => (
                 <div key={p.url}>
@@ -66,8 +66,8 @@ export default function Project({ piece }) {
         </div>
       </section>
       {(piece.hasAltImagesSecond || piece.hasAltVideoSecond) && (
-        <section className="c-project__full-image o-grid js-bgc--lt">
-          <div className="c-project__image-wrapper">
+        <section className="c-project__full-media o-grid js-bgc--lt">
+          <div className="c-project__media-wrapper">
             {piece.videoDisplay
               ? piece.altVideosSecond.map((p) => (
                   <div key={p.url}>

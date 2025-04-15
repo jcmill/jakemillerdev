@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "urlRoute": "color-curve",
+    "urlRoute": "project/color-curve",
     "brand": "NPM",
     "title": "SCSS Color Curve Tool",
     "options": {
@@ -73,7 +73,7 @@
   },
   {
     "id": 2,
-    "urlRoute": "motives-eyeliner",
+    "urlRoute": "project/motives-eyeliner",
     "brand": "Motives Cosmetics",
     "title": "Eyeliner Showcase",
     "options": {
@@ -129,7 +129,7 @@
   },
   {
     "id": 3,
-    "urlRoute": "gotrim-redesign",
+    "urlRoute": "project/gotrim-redesign",
     "brand": "GoTrim",
     "title": "Website Reskin",
     "options": {
@@ -206,7 +206,7 @@
   },
   {
     "id": 4,
-    "urlRoute": "the-dash",
+    "urlRoute": "project/the-dash",
     "brand": "SHOP•COM",
     "title": "Between The Dash Event",
     "options": {
@@ -262,8 +262,8 @@
   },
   {
     "id": 5,
-    "urlRoute": "5",
-    "brand": "SHOP•COM/UnFranchise.com",
+    "urlRoute": "project/single-page-checkout",
+    "brand": "SHOP•COM | UnFranchise.com",
     "title": "Single-Page Checkout",
     "options": {
       "hasUrl": false,
@@ -329,8 +329,8 @@
   },
   {
     "id": 6,
-    "urlRoute": "product-detail-page",
-    "brand": "SHOP.COM/unFranchise.com",
+    "urlRoute": "project/product-detail-page",
+    "brand": "SHOP.COM | UnFranchise.com",
     "title": "Product Detail Pages",
     "options": {
       "hasUrl": false,
@@ -388,7 +388,7 @@
   },
   {
     "id": 7,
-    "urlRoute": "7",
+    "urlRoute": "project/isotonix-reskin",
     "brand": "Isotonix",
     "title": "Website Reskin",
     "options": {

@@ -38,7 +38,6 @@ export default function useHoverImage() {
     const handleMouseEnter = (entry, index) => {
       imgHoverIndex = index;
       circleHover.classList.remove("js-circle--invisible");
-      imgHover[imgHoverIndex].classList.toggle("js-hide");
     };
 
     const handleMouseLeave = (e) => {
@@ -47,7 +46,6 @@ export default function useHoverImage() {
         !imgHover[imgHoverIndex]?.contains(e.relatedTarget)
       ) {
         circleHover.classList.add("js-circle--invisible");
-        imgHover[imgHoverIndex]?.classList.toggle("js-hide");
       }
     };
 

@@ -104,6 +104,7 @@ export default function Work({ handleProjectId }) {
               key={piece.id}
               piece={piece}
               index={i}
+              indexNum={i}
               type={filterType}
               handleProjectId={handleProjectId}
               handleFilterState={handleFilterState}

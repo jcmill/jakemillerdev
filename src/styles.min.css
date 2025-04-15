@@ -43,6 +43,13 @@ html:focus-within {
 body {
   text-rendering: optimizeSpeed;
   line-height: 1.6;
+  overflow-x: clip;
+  position: relative;
+}
+
+#root {
+  overflow-x: clip;
+  position: relative;
 }
 
 img,
@@ -400,7 +407,7 @@ section {
 }
 
 section:last-of-type {
-  box-shadow: 0 0.5em 10em rgba(0, 0, 0, 0.5);
+  box-shadow: 0 2em 4em rgba(0, 0, 0, 0.5);
 }
 
 .c-grid__display {
@@ -1200,7 +1207,11 @@ button {
 .c-hero__video {
   grid-column: 1 / span 4;
   grid-row: 1;
-  place-self: end center;
+  place-self: center;
+}
+
+.c-hero__video > div {
+  display: grid;
 }
 
 .c-hero__video video {
@@ -2133,7 +2144,6 @@ header .o-grid-icon {
   height: -moz-fit-content;
   height: fit-content;
   inset: 1em 1em auto auto;
-  place-items: end;
   position: fixed;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -2435,23 +2445,23 @@ header .o-grid-icon {
     margin: 0;
   }
 }
-.c-project__full-image {
+.c-project__full-media {
   min-height: auto;
 }
 
 @media screen and (min-width: 1024px) {
-  .c-project__full-image {
+  .c-project__full-media {
     min-height: 100dvh;
   }
 }
 
-.c-project__full-image img {
+.c-project__full-media img {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
 }
 
-.c-project__image-wrapper {
+.c-project__media-wrapper {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -2467,17 +2477,35 @@ header .o-grid-icon {
   justify-content: center;
 }
 
-.c-project__image-wrapper > div {
+.c-project__media-wrapper > div {
   align-items: center;
   display: flex;
-  flex: 1 1 0%;
+  flex: 1 0 40%;
   justify-content: center;
 }
 
+.c-project__media-wrapper > div img {
+  display: block;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 100%;
+}
+
 @media screen and (min-width: 768px) {
-  .c-project__image-wrapper {
+  .c-project__media-wrapper {
     gap: 10dvh;
     grid-column: 2 / span 5;
+  }
+
+  .c-project__media-wrapper > div {
+    flex: 0 1 30%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .c-project__media-wrapper > div {
+    flex: 1 1 10%;
   }
 }
 
