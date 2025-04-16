@@ -1455,8 +1455,8 @@ button {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -1465,14 +1465,28 @@ button {
 .c-portfolio__component--text h5 {
   color: #ff0000;
   cursor: pointer;
-  min-height: 2em;
   text-wrap: balance;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 
 .c-portfolio__component--text p {
-  text-align: right;
+  text-align: left;
+}
+
+@media screen and (min-width: 1024px) {
+  .c-portfolio__component--text {
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+
+  .c-portfolio__component--text h5 {
+    min-height: 2em;
+  }
+
+  .c-portfolio__component--text p {
+    text-align: right;
+  }
 }
 
 .c-portfolio__component:nth-of-type(4n + 2) {

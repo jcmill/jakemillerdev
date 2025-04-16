@@ -6,13 +6,6 @@ import Contact from "./pages/Contact";
 import Test from "./pages/TestPage";
 import Footer from "./layouts/Footer";
 import Project from "./pages/Project";
-// import ColorCurve from "./pages/ColorCurve";
-// import MotivesEyeliner from "./pages/MotivesEyeliner";
-// import GotrimRedesign from "./pages/GotrimRedesign";
-// import TheDash from "./pages/TheDash";
-// import SinglePageCheckout from "./pages/SinglePageCheckout";
-// import ProductDetailPage from "./pages/ProductDetailPage";
-// import IsotonixReskin from "./pages/IsotonixReskin";
 import NotFound from "./pages/NoFound";
 import Ascii from "./hooks/useLog";
 import ScrollToTop from "./hooks/useScrollToTop";
@@ -46,12 +39,16 @@ function AnimatedRoutes({ handleProjectId, handleProject }) {
             </TransitionWrapper>
           }
         />
-        {/* <Route
+        <Route
           path="/project/color-curve"
           element={
             <TransitionWrapper>
               <main>
-                <ColorCurve piece={handleProject} />
+                <Project
+                  piece={portfolio.find(
+                    (item) => item.urlRoute === "project/color-curve"
+                  )}
+                />
               </main>
               <Footer />
             </TransitionWrapper>
@@ -62,7 +59,11 @@ function AnimatedRoutes({ handleProjectId, handleProject }) {
           element={
             <TransitionWrapper>
               <main>
-                <MotivesEyeliner piece={handleProject} />
+                <Project
+                  piece={portfolio.find(
+                    (item) => item.urlRoute === "project/motives-eyeliner"
+                  )}
+                />
               </main>
               <Footer />
             </TransitionWrapper>
@@ -73,7 +74,11 @@ function AnimatedRoutes({ handleProjectId, handleProject }) {
           element={
             <TransitionWrapper>
               <main>
-                <GotrimRedesign piece={handleProject} />
+                <Project
+                  piece={portfolio.find(
+                    (item) => item.urlRoute === "project/gotrim-redesign"
+                  )}
+                />
               </main>
               <Footer />
             </TransitionWrapper>
@@ -84,7 +89,11 @@ function AnimatedRoutes({ handleProjectId, handleProject }) {
           element={
             <TransitionWrapper>
               <main>
-                <TheDash piece={handleProject} />
+                <Project
+                  piece={portfolio.find(
+                    (item) => item.urlRoute === "project/the-dash"
+                  )}
+                />
               </main>
               <Footer />
             </TransitionWrapper>
@@ -95,7 +104,11 @@ function AnimatedRoutes({ handleProjectId, handleProject }) {
           element={
             <TransitionWrapper>
               <main>
-                <SinglePageCheckout piece={handleProject} />
+                <Project
+                  piece={portfolio.find(
+                    (item) => item.urlRoute === "project/single-page-checkout"
+                  )}
+                />
               </main>
               <Footer />
             </TransitionWrapper>
@@ -106,7 +119,11 @@ function AnimatedRoutes({ handleProjectId, handleProject }) {
           element={
             <TransitionWrapper>
               <main>
-                <ProductDetailPage piece={handleProject} />
+                <Project
+                  piece={portfolio.find(
+                    (item) => item.urlRoute === "project/product-detail-page"
+                  )}
+                />
               </main>
               <Footer />
             </TransitionWrapper>
@@ -117,18 +134,11 @@ function AnimatedRoutes({ handleProjectId, handleProject }) {
           element={
             <TransitionWrapper>
               <main>
-                <IsotonixReskin piece={handleProject} />
-              </main>
-              <Footer />
-            </TransitionWrapper>
-          }
-        /> */}
-        <Route
-          path="/project/color-curve"
-          element={
-            <TransitionWrapper>
-              <main>
-                <Project piece={portfolio[0]} />
+                <Project
+                  piece={portfolio.find(
+                    (item) => item.urlRoute === "project/product-detail-page"
+                  )}
+                />
               </main>
               <Footer />
             </TransitionWrapper>
