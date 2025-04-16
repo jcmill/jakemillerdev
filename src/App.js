@@ -16,6 +16,7 @@ import Project from "./pages/Project";
 import NotFound from "./pages/NoFound";
 import Ascii from "./hooks/useLog";
 import ScrollToTop from "./hooks/useScrollToTop";
+import portfolio from "./data/portfolio";
 
 function AnimatedRoutes({ handleProjectId, handleProject }) {
   ScrollToTop();
@@ -123,6 +124,17 @@ function AnimatedRoutes({ handleProjectId, handleProject }) {
           }
         /> */}
         <Route
+          path="/project/color-curve"
+          element={
+            <TransitionWrapper>
+              <main>
+                <Project piece={portfolio[0]} />
+              </main>
+              <Footer />
+            </TransitionWrapper>
+          }
+        />
+        {/* <Route
           path={`/${handleProject.urlRoute}`}
           element={
             <TransitionWrapper>
@@ -132,7 +144,7 @@ function AnimatedRoutes({ handleProjectId, handleProject }) {
               <Footer />
             </TransitionWrapper>
           }
-        />
+        /> */}
         <Route
           path="/contact"
           element={
