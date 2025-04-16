@@ -66,8 +66,8 @@ export default function HomeProject({
     const setupPhrases = () => {
       const portfolioPhrases = [
         "Like any good story, some chapters flow effortlessly… and others involve a lot of coffee and debugging at 2 AM.",
-        "Every great build starts with a simple idea… and a few ‘why isn’t this working?",
-        "Every pixel, every challenge, every late-night aha! moment.",
+        'Every great build starts with a simple idea… and a few "why isn’t this working?"',
+        'Every pixel, every challenge, every late-night "aha!" moment.',
         "Here’s a glimpse into the journey.",
         "Some projects feel like a walk in the park. Others…",
         "Like scaling a mountain with a laptop in one hand and coffee in the other.",
