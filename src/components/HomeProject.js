@@ -17,7 +17,6 @@ export default function HomeProject({
   useHoverTextAnimation();
   const imageStackRef = useRef(null);
   const [isSmallScreen, setIsSmallScreen] = useState(false);
-  console.log(isSmallScreen);
 
   const getRandomIndex = (arrayLength) => {
     return Math.floor(Math.random() * arrayLength);
