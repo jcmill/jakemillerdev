@@ -113,7 +113,7 @@ h1 {
   color: #3b3b3b;
   font-family: "menca", sans-serif;
   font-weight: 900;
-  font-size: clamp(3em, 18vw, 3.5em);
+  font-size: clamp(2em, 14vw, 3.5em);
   line-height: 0.8;
   text-transform: uppercase;
 }
@@ -1205,6 +1205,7 @@ button {
   }
 }
 .c-hero__video {
+  display: grid;
   grid-column: 1 / span 4;
   grid-row: 1;
   place-self: center;
@@ -1218,6 +1219,12 @@ button {
   height: 100%;
   margin: 8dvh 0 0 0;
   mix-blend-mode: lighten;
+  place-self: center;
+  width: 80%;
+}
+
+.c-hero__video img {
+  margin: 4dvh 0 0 0;
   place-self: center;
   width: 80%;
 }
@@ -1966,11 +1973,12 @@ footer {
     transform: scaleY(100%);
   }
 }
+
 header {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 2fr;
-  inset: 2em auto auto auto;
+  inset: 1.5em auto auto auto;
   position: fixed;
   z-index: 776;
 }
@@ -1981,7 +1989,7 @@ header .o-logo {
   grid-template-columns: 1fr;
   grid-row: 1;
   grid-template-rows: 2em;
-  padding: 0 1.5em;
+  padding: 0 1em;
   -webkit-transition: translate 0.25s, opacity 1s;
   transition: translate 0.25s, opacity 1s;
 }
@@ -1989,7 +1997,7 @@ header .o-logo {
 header .o-logo img {
   grid-column: 1;
   grid-row: 1;
-  height: 2em;
+  height: 1.5em;
   margin: 0 auto;
 }
 
@@ -2027,6 +2035,20 @@ header .o-grid-icon {
   inset: auto 2em 2em auto;
   position: absolute;
   width: 1.5em;
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    inset: 2em auto auto auto;
+  }
+
+  header .o-logo {
+    padding: 0 1.5em;
+  }
+
+  header .o-logo img {
+    height: 2em;
+  }
 }
 
 .o-hamburger {
@@ -2157,7 +2179,7 @@ header .o-grid-icon {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  inset: 1em 1em auto auto;
+  inset: 1.5em 1.5em auto auto;
   position: fixed;
   width: -webkit-fit-content;
   width: -moz-fit-content;

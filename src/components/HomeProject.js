@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 import { HashLink as Link } from "react-router-hash-link";
 import useWorkAnimations from "../hooks/useWorkAnimations.js";
 import useHoverTextAnimation from "../hooks/useHoverTextAnimation.js";
@@ -16,6 +16,8 @@ export default function HomeProject({
   useHoverImage();
   useHoverTextAnimation();
   const imageStackRef = useRef(null);
+  const [isSmallScreen, setIsSmallScreen] = useState(false);
+  console.log(isSmallScreen);
 
   const getRandomIndex = (arrayLength) => {
     return Math.floor(Math.random() * arrayLength);
@@ -25,7 +27,8 @@ export default function HomeProject({
     const imageStack = imageStackRef.current;
     const image = imageStack.querySelector(".js-image");
     const video = imageStack.querySelector(".js-project-vid");
-    video.pause();
+
+    !isSmallScreen && video.pause();
 
     if (!imageStack || !image || !video) {
       console.error("Required elements not found in Project component.");
@@ -48,7 +51,7 @@ export default function HomeProject({
     const handleMouseLeave = () => {
       image.classList.remove("js-hide");
       video.classList.add("js-hide");
-      video.pause();
+      !isSmallScreen && video.pause();
     };
 
     imageStack.addEventListener("mouseenter", handleMouseEnter);
@@ -58,7 +61,7 @@ export default function HomeProject({
       imageStack.removeEventListener("mouseenter", handleMouseEnter);
       imageStack.removeEventListener("mouseleave", handleMouseLeave);
     };
-  }, []);
+  }, [isSmallScreen]);
 
   let phraseClass = index === 1 ? "o-color-block--even" : "";
 
@@ -110,6 +113,17 @@ export default function HomeProject({
     handleProjectId(piece);
   }
 
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(max-width: 480px)");
+
+    setIsSmallScreen(mediaQuery.matches);
+
+    const handleResize = () => setIsSmallScreen(mediaQuery.matches);
+    mediaQuery.addEventListener("change", handleResize);
+
+    return () => mediaQuery.removeEventListener("change", handleResize);
+  }, []);
+
   return (
     <div
       onClick={() => handleProjectClick(piece)}
@@ -120,15 +134,17 @@ export default function HomeProject({
       }>
       <Link to={piece.urlRoute} data-type={type} onClick={handleFilterState}>
         <div ref={imageStackRef} className="o-image--stack js-image--stack">
-          <video
-            className="js-hover-image js-project-vid"
-            src={piece.video}
-            data-type={type}
-            loading="lazy"
-            loop
-            muted
-            playsInline
-          />
+          {!isSmallScreen && (
+            <video
+              className="js-hover-image js-project-vid"
+              src={piece.video}
+              data-type={type}
+              loading="lazy"
+              loop
+              muted
+              playsInline
+            />
+          )}
           <img
             className="js-image js-hover-image"
             src={piece.homeImage}
