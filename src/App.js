@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
+import Loader from "./layouts/Loader";
 import Home from "./pages/Home";
 import Contact from "./pages/Contact";
 import Test from "./pages/TestPage";
@@ -249,20 +250,27 @@ export default function App() {
   Ascii();
   const [isLoader, setLoader] = useState(true);
   useEffect(() => {
-    const loader = document.querySelector(".c-loader");
-    if (isLoader) {
+    // callback function to call when event triggers
+    const onPageLoad = () => {
       setTimeout(() => {
-        if (loader) {
-          loader.style.display = "none";
-        }
         setLoader(false);
-      }, 2000);
+      }, 1000);
+    };
+
+    // Check if the page has already loaded
+    if (document.readyState === "complete") {
+      onPageLoad();
+    } else {
+      window.addEventListener("load", onPageLoad, false);
+      return () => window.removeEventListener("load", onPageLoad);
     }
   }, [isLoader]);
 
   return (
     <>
-      {isLoader ? null : (
+      {isLoader ? (
+        <Loader />
+      ) : (
         <BrowserRouter>
           <AnimatedRoutes
             handleProjectId={setProjectId}

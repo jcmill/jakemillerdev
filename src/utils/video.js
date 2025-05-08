@@ -8,7 +8,7 @@ export default class Video extends Component {
   componentDidMount() {
     const src = this.props.src;
     const html = `
-        <video playsinline autoPlay muted loop>
+        <video playsinline autoPlay muted loop fetchpriority="high">
             <source src=${src} />
         </video>
       `;

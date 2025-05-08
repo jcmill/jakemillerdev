@@ -9,7 +9,7 @@
   z-index: 100;
 
   img {
-    animation: grow 2s ease-in-out 0s;
+    animation: grow 1s ease-in-out 0s;
     opacity: 0;
     width: 3em;
   }

@@ -20,10 +20,16 @@ export default function Canvas() {
     const images = [];
     let frames = { frame: 0 };
 
-    for (let i = 0; i < frameCount; i++) {
-      const img = new Image();
-      img.src = currentFrame(i);
-      images.push(img);
+    const firstImage = new Image();
+    firstImage.src = currentFrame(0);
+    images[0] = firstImage;
+
+    function loadImage(index) {
+      if (!images[index]) {
+        const img = new Image();
+        img.src = currentFrame(index);
+        images[index] = img;
+      }
     }
 
     gsap.to(frames, {
@@ -31,21 +37,29 @@ export default function Canvas() {
       snap: "frame",
       ease: "none",
       scrollTrigger: {
+        start: "-10%",
         trigger: canvas,
         scrub: 2,
-        end: "100%",
+        end: "110%",
       },
-      onUpdate: render,
+      onUpdate: () => {
+        render();
+        loadImage(frames.frame + 1);
+        loadImage(frames.frame - 1);
+      },
     });
 
-    images[0].onload = render;
+    firstImage.onload = render;
 
     function render() {
-      context.canvas.width = images[0].width;
-      context.canvas.height = images[0].height;
+      const image = images[frames.frame];
+      if (image && image.complete) {
+        context.canvas.width = image.width;
+        context.canvas.height = image.height;
 
-      context.clearRect(0, 0, canvas.width, canvas.height);
-      context.drawImage(images[frames.frame], 0, 0);
+        context.clearRect(0, 0, canvas.width, canvas.height);
+        context.drawImage(image, 0, 0);
+      }
     }
 
     return () => {
