@@ -65,7 +65,7 @@
     "btnUrl": "https://www.npmjs.com/package/scss-color-curve",
     "hasBtn2": true,
     "btnText2": "Read More",
-    "btnUrl2": "https://medium.com/@jake83miller/i-built-a-thing-and-it-might-just-save-your-color-palette-401381bc81f6",
+    "btnUrl2": "https://medium.com/@jakemdev/i-built-a-thing-and-it-might-just-save-your-color-palette-401381bc81f6",
     "text": "In an effort to create more accessible and visually consistent UI color systems, I built and released SCSS Color Curve, a Sass-based color tool that reimagines how we generate color variations. By using an exponential approach to saturation and luminance, this tool produces vibrant, readable gradients that retain their clarity and impact. Even as they shift across the spectrum, the result is a more refined alternative to traditional tint and shade methods.",
     "text2": "What makes this project particularly unique is the lens through which it was developed—literally. With a background in branding, UI design, and mathematics, I approached the challenge not just as a creative or coder, but as someone who has experience in color specific accessibilities. This perspective shaped every part of the tool, from the underlying math to the visual output. SCSS Color Curve is more than a utility—it’s a creative solution built at the intersection of accessibility, design, and engineering.",
     "countryTitle": "Country",
