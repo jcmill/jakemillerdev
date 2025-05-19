@@ -1,18 +1,18 @@
 # Personal Website
 
-##Launch Date:            
+Launch Date:            
 04.13.2025
 
-##Version:            
+Version:            
 v1.0
 
-##Frontend:            
+Frontend:            
 SASS / PUG / GSAP / React.js / Lottie 
 
-##API:            
+API:            
 Web3Forms
   
-###Notes:           
+Notes:           
 The initial version of this project, V1, was a fast, functional build 
 developed within my Pug/SASS/JavaScript environment. I had established 
 much of the core functionality, but the project was temporarily shelved 
