@@ -1,15 +1,15 @@
 # Personal Website
 
-###Launch Date:            
+##Launch Date:            
 04.13.2025
 
-###Version:            
+##Version:            
 v1.0
 
-###Frontend:            
+##Frontend:            
 SASS / PUG / GSAP / React.js / Lottie 
 
-###API:            
+##API:            
 Web3Forms
   
 ###Notes:           
