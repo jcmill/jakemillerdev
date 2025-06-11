@@ -4,6 +4,7 @@ import { HashLink as Link } from "react-router-hash-link";
 import useHoverTextAnimation from "../hooks/useHoverTextAnimation";
 import iconCodePen from "../images/icons/icon-codepen.svg";
 import iconLinkedIn from "../images/icons/icon-linkedin-light.svg";
+import iconMedium from "../images/icons/icon-medium.svg";
 
 export default function Footer() {
   useHoverTextAnimation();
@@ -56,12 +57,23 @@ export default function Footer() {
               </div>
               <div className="c-footer__links--socials">
                 <a href="https://codepen.io/sc1re" alt="CodePen link">
-                  <img className="social" src={iconCodePen} alt="" />
+                  <img
+                    className="social"
+                    src={iconCodePen}
+                    alt="Codepen Link"
+                  />
                 </a>
                 <a
                   href="https://www.linkedin.com/in/jakemillerdev/"
                   alt="LinkedIn link">
-                  <img className="social" src={iconLinkedIn} alt="" />
+                  <img
+                    className="social"
+                    src={iconLinkedIn}
+                    alt="LinkedIn Link"
+                  />
+                </a>
+                <a href="https://medium.com/@jakemdev" alt="LinkedIn link">
+                  <img className="social" src={iconMedium} alt="Medium Link" />
                 </a>
               </div>
             </div>

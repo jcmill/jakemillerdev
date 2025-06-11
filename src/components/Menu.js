@@ -1,6 +1,7 @@
 import { HashLink as Link } from "react-router-hash-link";
 import iconCodepen from "../images/icons/icon-codepen.svg";
 import iconLinkedIn from "../images/icons/icon-linkedin-light.svg";
+import iconMedium from "../images/icons/icon-medium.svg";
 
 export default function Menu({ handleHamburgerClick }) {
   return (
@@ -49,6 +50,9 @@ export default function Menu({ handleHamburgerClick }) {
                 href="https://www.linkedin.com/in/jakemillerdev/"
                 alt="LinkedIn link">
                 <img src={iconLinkedIn} alt="" />
+              </a>
+              <a href="https://medium.com/@jakemdev" alt="Mediun link">
+                <img src={iconMedium} alt="" />
               </a>
             </div>
             <span className="disclaimer">

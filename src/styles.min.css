@@ -1919,9 +1919,6 @@ footer {
     gap: 6dvw;
     margin: 0;
   }
-  .c-footer__links img {
-    margin: 0 0 1em 0;
-  }
 }
 @media screen and (min-width: 1200px) {
   .c-footer__links__links {
@@ -2764,9 +2761,6 @@ header .o-grid-icon {
     grid-row: 2;
     gap: 6dvw;
     margin: 0;
-  }
-  .c-contact__links img {
-    margin: 0 0 1em 0;
   }
 }
 @media screen and (min-width: 1200px) {
