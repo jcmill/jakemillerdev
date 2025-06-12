@@ -37,7 +37,7 @@ export default function Canvas() {
       snap: "frame",
       ease: "none",
       scrollTrigger: {
-        start: "-10%",
+        start: "0%",
         trigger: canvas,
         scrub: 2,
         end: "110%",

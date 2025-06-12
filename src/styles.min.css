@@ -1742,6 +1742,10 @@ canvas {
   padding: 0 0 2em;
 }
 
+.c-about__copy p {
+  text-wrap: pretty;
+}
+
 .c-about__copy p:last-of-type {
   margin: 0;
 }

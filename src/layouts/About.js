@@ -17,24 +17,22 @@ export default function About() {
       </div>
       <div className="c-about__copy">
         <p>
-          I've spent the last two decades collecting skills like a RPG
-          character—leveling up in design, creativity, and problem-solving to
-          bring ideas to life. When a great concept crosses my path, I don’t
-          just admire it. I roll up my sleeves, grab my metaphorical toolkit,
-          and get to work.
+          For over 20 years, I’ve grown from maker to leader and turned ideas
+          into impact. Leading at the intersection of design, strategy, and
+          execution. From brand vision to product roadmaps, delivering work
+          that’s not only beautifully crafted but grounded in purpose, insights,
+          and results.
         </p>
         <p>
-          The real magic isn’t just having an idea; it’s the adventure of
-          shaping, refining, and turning it into something real. Connecting the
-          dots, untangling challenges, and crafting solutions that don’t just
-          look good, but actually work is very rewarding.
+          I believe dreaming is only half the equation. The real magic happens
+          in the building, where ideas meet systems, where teams align, and
+          where solutions come to life in ways that serve both people and
+          business.
         </p>
         <p>
-          To me, design and creation are two different beasts. Designing is
-          dreaming; creating is making it happen. The <i>real thrill</i> is that
-          moment when an idea leaves the sketchbook and steps into the real
-          world, ready to make an impact. That’s what keeps me coming back for
-          more of this development world.
+          Whether it’s driving integrated campaigns, mentoring, or shaping
+          inclusive, scalable experiences, I stay focused on building what
+          truely matters.
         </p>
       </div>
     </section>
